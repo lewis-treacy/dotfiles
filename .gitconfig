@@ -1,0 +1,7 @@
+[user]
+	name = Lewis Treacy
+	email = lewisjtreacy@gmail.com
+[core]
+	editor = nvim
+[push]
+	default = simple
