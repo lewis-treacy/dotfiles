@@ -106,3 +106,6 @@ fi
 #Stuff what I added
 source ~/.aliases.sh
 source ~/.theme.sh
+export GOPATH=$HOME/.go
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export STO=/media/lewis/storage
