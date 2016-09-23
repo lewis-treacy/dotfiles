@@ -28,7 +28,6 @@ set tabstop=4
 set shiftwidth=4
 
 set noerrorbells
-set modeline
 set esckeys
 set linespace=0
 set nojoinspaces
@@ -60,6 +59,7 @@ set gdefault
 set magic
 
 set clipboard=unnamedplus
+let $NVIM_TUI_ENABLE_CURSOR_SHAPE=1
 
 set rnu
 function NumToggle()
@@ -71,7 +71,7 @@ function NumToggle()
     endif
 endfunction
 
-nnoremap <leader>r :call NumToggle()<cr>
+nnoremap <leader>r :call NumToggle()<CR>
 autocmd InsertEnter * :call NumToggle()
 autocmd InsertLeave * :call NumToggle()
 
@@ -94,24 +94,26 @@ noremap   <Right>  <nop>
 
 nnoremap ; :
 nnoremap Q @q
-nnoremap <leader>w :w<cr>
-nnoremap <leader>q :q<cr>
+nnoremap <leader>w :w<CR>
+nnoremap <leader>q :q<CR>
 nnoremap <C-_> :nohlsearch<CR>
 nnoremap <leader>/ :nohlsearch<CR>
-autocmd FileType python nnoremap <leader>y :0,$!yapf<cr>
-map <leader>k :NERDTreeToggle<cr>
+autocmd FileType python nnoremap <leader>y :0,$!yapf<CR>
+map <leader>k :NERDTreeToggle<CR>
 
 map <A-h> gt
 map <A-l> gT
-map <C-A-h> :tabmove -1<cr>
-map <C-A-l> :tabmove +1<cr>
 
-nnoremap <C-j> <C-W><C-j>
-nnoremap <C-K> <C-W><C-K>
-nnoremap <C-L> <C-W><C-L>
-nnoremap <C-H> <C-W><C-H>
+nnoremap <C-H> <C-W>h
+nnoremap <C-J> <C-W>j
+nnoremap <C-K> <C-W>k
+nnoremap <C-L> <C-W>l
+nnoremap <C-A-H> <C-W>H
+nnoremap <C-A-J> <C-W>J
+nnoremap <C-A-K> <C-W>K
+nnoremap <C-A-L> <C-W>L
 
-inoremap <S-Tab> <C-d>
+inoremap <S-Tab> <C-D>
 
 autocmd FileType python set colorcolumn=80
 autocmd FileType haskell set colorcolumn=80
