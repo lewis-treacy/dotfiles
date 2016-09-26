@@ -9,6 +9,7 @@ call plug#begin()
     Plug 'tpope/vim-fugitive'
     Plug 'airblade/vim-gitgutter'
     Plug 'scrooloose/nerdtree'
+    Plug 'tpope/vim-surround'
 
     Plug 'chriskempson/base16-vim'
 "}
@@ -18,7 +19,6 @@ call plug#end()
 let mapleader="\<SPACE>"
 
 set showcmd
-set showmatch
 set ruler
 set number
 set formatoptions+=o
