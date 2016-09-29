@@ -19,6 +19,7 @@ call plug#end()
 let mapleader="\<SPACE>"
 
 set showcmd
+set showmatch
 set ruler
 set number
 set formatoptions+=o
