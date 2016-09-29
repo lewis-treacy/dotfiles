@@ -71,6 +71,16 @@ function NumToggle()
     endif
 endfunction
 
+function! <SID>StripTrailingWhitespaces()
+    " save last search & cursor position
+    let _s=@/
+    let l = line(".")
+    let c = col(".")
+    %s/\s\+$//e
+    let @/=_s
+    call cursor(l, c)
+endfunction
+
 nnoremap <leader>r :call NumToggle()<CR>
 autocmd InsertEnter * :call NumToggle()
 autocmd InsertLeave * :call NumToggle()
@@ -91,15 +101,21 @@ noremap   <Up>     <nop>
 noremap   <Down>   <nop>
 noremap   <Left>   <nop>
 noremap   <Right>  <nop>
+nnoremap B ^
+nnoremap E $
 
 nnoremap ; :
 nnoremap Q @q
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <C-_> :nohlsearch<CR>
-nnoremap <leader>/ :nohlsearch<CR>
+nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>v `[v`]
 autocmd FileType python nnoremap <leader>y :0,$!yapf<CR>
 map <leader>k :NERDTreeToggle<CR>
+
+nnoremap <leader>ev :vsp $MYVIMRC<cr>
+nnoremap <leader>sv :so $MYVIMRC<cr>
+nnoremap <leader>s :mksession<cr>
 
 map <A-h> gt
 map <A-l> gT
@@ -127,3 +143,6 @@ let g:airline_powerline_fonts = 1
 let g:airline#extensions#tabline#enabled = 2
 let g:airline#extensions#tabline#fnamemod = ':t'
 let g:airline_theme = 'base16'
+
+let g:ctrlp_match_window = 'bottom,order:ttb'
+let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
