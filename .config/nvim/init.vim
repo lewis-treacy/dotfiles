@@ -109,14 +109,13 @@ nnoremap ; :
 nnoremap Q @q
 nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
-nnoremap <leader><space> :nohlsearch<CR>
+nnoremap <leader>/ :nohlsearch<CR>
 nnoremap <leader>v `[v`]
 autocmd FileType python nnoremap <leader>y :0,$!yapf<CR>
 map <leader>k :NERDTreeToggle<CR>
 
 nnoremap <leader>ev :vsp $MYVIMRC<cr>
 nnoremap <leader>sv :so $MYVIMRC<cr>
-nnoremap <leader>s :mksession<cr>
 
 map <A-h> gt
 map <A-l> gT
