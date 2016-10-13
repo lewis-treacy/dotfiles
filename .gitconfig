@@ -5,3 +5,5 @@
 	editor = vim
 [push]
 	default = simple
+[init]
+	templatedir = /homes/ljt16/.gittemplate
