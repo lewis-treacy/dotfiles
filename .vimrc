@@ -1,4 +1,4 @@
-" ==================== Plugins =====================
+ " ==================== Plugins =====================
 call plug#begin()
 
     Plug 'neovimhaskell/haskell-vim'
@@ -26,10 +26,9 @@ set visualbell
 set autoread
 set laststatus=2
 set clipboard=unnamedplus
+set noshowmode
 
 set hidden
-
-syntax on
 
 let mapleader="\<SPACE>"
 
