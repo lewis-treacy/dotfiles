@@ -2,6 +2,6 @@
 	name = Lewis Treacy
 	email = lewis.treacy16@imperial.ac.uk
 [core]
-	editor = nvim
+	editor = vim
 [push]
 	default = simple
