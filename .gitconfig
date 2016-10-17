@@ -1,9 +1,9 @@
 [user]
-	name = Lewis Treacy
-	email = lewis.treacy16@imperial.ac.uk
+  name = Lewis Treacy
+  email = lewis.treacy16@imperial.ac.uk
 [core]
-	editor = vim
+  editor = vim
 [push]
-	default = simple
+  default = simple
 [init]
-	templatedir = /homes/ljt16/.gittemplate
+  templatedir = ~/.gittemplate
