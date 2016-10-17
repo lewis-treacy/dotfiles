@@ -27,6 +27,7 @@ set autoread
 set laststatus=2
 set clipboard=unnamedplus
 set noshowmode
+set colorcolumn=80
 
 set hidden
 
@@ -117,7 +118,6 @@ nnoremap <C-A-K> <C-W><S-K>
 nnoremap <C-A-L> <C-W><S-L>
 
 " =========== Language Specific Settings ===========
-autocmd FileType python set colorcolumn=80
 autocmd FileType haskell set tabstop=2 | set shiftwidth=2
 
 " ================ Custom Functions ================
