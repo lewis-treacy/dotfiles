@@ -28,6 +28,8 @@ set laststatus=2
 set clipboard=unnamedplus
 set noshowmode
 set colorcolumn=80
+set splitright
+set splitbelow
 
 set hidden
 
