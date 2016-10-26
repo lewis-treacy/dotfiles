@@ -44,6 +44,7 @@ set listchars=eol:¬,trail:~,space:·
 set list
 highlight SpecialKey ctermfg=darkgrey
 highlight NonText ctermfg=darkgrey
+highlight MatchParen cterm=none ctermbg=grey ctermfg=darkblue
 
 " ================== Indentation ===================
 set autoindent
