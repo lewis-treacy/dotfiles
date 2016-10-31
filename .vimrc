@@ -108,6 +108,7 @@ nnoremap <leader>ev :vsp $MYVIMRC<CR>
 nnoremap <leader>sv :so $MYVIMRC<CR>
 nnoremap <leader>r :call ToggleNumber()<CR>
 nnoremap <leader>l :call ToggleList()<CR>
+nnoremap <leader>c :SyntasticToggleMode<CR>
 
 " ============== Navigation Shortcuts ==============
 map <A-h> gt
