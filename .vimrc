@@ -30,6 +30,7 @@ set noshowmode
 set colorcolumn=80
 set splitright
 set splitbelow
+set rnu
 
 set hidden
 
@@ -103,9 +104,10 @@ nnoremap <leader>w :w<CR>
 nnoremap <leader>q :q<CR>
 nnoremap <leader>/ :nohlsearch<CR>
 nnoremap <leader>k :NERDTreeToggle<CR>
-nnoremap <leader>ev :vsp $MYVIMRC<cr>
-nnoremap <leader>sv :so $MYVIMRC<cr>
+nnoremap <leader>ev :vsp $MYVIMRC<CR>
+nnoremap <leader>sv :so $MYVIMRC<CR>
 nnoremap <leader>r :call ToggleNumber()<CR>
+nnoremap <leader>l :call ToggleList()<CR>
 
 " ============== Navigation Shortcuts ==============
 map <A-h> gt
@@ -125,7 +127,6 @@ autocmd FileType haskell set tabstop=2 | set shiftwidth=2
 
 " ================ Custom Functions ================
 " Toggles between number and realtive number when mode is changed
-set rnu
 function! ToggleNumber()
     if(&relativenumber == 1)
         set norelativenumber
@@ -136,6 +137,14 @@ function! ToggleNumber()
 endfunc
 autocmd InsertEnter * :call ToggleNumber()
 autocmd InsertLeave * :call ToggleNumber()
+
+function! ToggleList()
+    if(&list == 1)
+       set nolist
+    else
+       set list
+    endif
+endfunc
 
 " =================== Syntastic ====================
 set statusline+=%#warningmsg#
