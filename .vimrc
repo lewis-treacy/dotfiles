@@ -1,18 +1,18 @@
  " ==================== Plugins =====================
 call plug#begin()
 
-    Plug 'neovimhaskell/haskell-vim'
+  Plug 'neovimhaskell/haskell-vim'
 
-    Plug 'kien/ctrlp.vim'
-    Plug 'bling/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'tpope/vim-fugitive'
-    Plug 'airblade/vim-gitgutter'
-    Plug 'scrooloose/nerdtree'
-    Plug 'tpope/vim-surround'
-    Plug 'scrooloose/syntastic'
+  Plug 'kien/ctrlp.vim'
+  Plug 'bling/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'tpope/vim-fugitive'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'scrooloose/nerdtree'
+  Plug 'tpope/vim-surround'
+  Plug 'scrooloose/syntastic'
 
-    Plug 'chriskempson/base16-vim'
+  Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -51,9 +51,9 @@ highlight MatchParen cterm=none ctermbg=grey ctermfg=darkblue
 set autoindent
 set smartindent
 set smarttab
-set shiftwidth=4
-set softtabstop=4
-set tabstop=4
+set shiftwidth=2
+set softtabstop=2
+set tabstop=2
 set expandtab
 
 filetype indent on
@@ -124,27 +124,27 @@ nnoremap <C-A-K> <C-W><S-K>
 nnoremap <C-A-L> <C-W><S-L>
 
 " =========== Language Specific Settings ===========
-autocmd FileType haskell set tabstop=2 | set shiftwidth=2
+autocmd FileType python set tabstop=4 | set shiftwidth=4
 
 " ================ Custom Functions ================
 " Toggles between number and realtive number when mode is changed
 function! ToggleNumber()
-    if(&relativenumber == 1)
-        set norelativenumber
-        set number
-    else
-        set relativenumber
-    endif
+  if(&relativenumber == 1)
+    set norelativenumber
+    set number
+  else
+    set relativenumber
+  endif
 endfunc
 autocmd InsertEnter * :call ToggleNumber()
 autocmd InsertLeave * :call ToggleNumber()
 
 function! ToggleList()
-    if(&list == 1)
-       set nolist
-    else
-       set list
-    endif
+  if(&list == 1)
+    set nolist
+  else
+    set list
+  endif
 endfunc
 
 " =================== Syntastic ====================
