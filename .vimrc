@@ -17,7 +17,7 @@ call plug#begin()
 call plug#end()
 
 " ================= General Config =================
-set number
+set number rnu
 set backspace=indent,eol,start
 set history=1000
 set showcmd
@@ -30,7 +30,7 @@ set noshowmode
 set colorcolumn=80
 set splitright
 set splitbelow
-set rnu
+set list
 
 set hidden
 
@@ -42,7 +42,6 @@ let base16colorspace=256
 colorscheme base16-google-dark
 
 set listchars=eol:¬,trail:~,space:·
-set list
 highlight SpecialKey ctermfg=darkgrey
 highlight NonText ctermfg=darkgrey
 highlight MatchParen cterm=none ctermbg=grey ctermfg=darkblue
@@ -130,10 +129,9 @@ autocmd FileType python set tabstop=4 | set shiftwidth=4
 " Toggles between number and realtive number when mode is changed
 function! ToggleNumber()
   if(&relativenumber == 1)
-    set norelativenumber
-    set number
+    set nornu
   else
-    set relativenumber
+    set rnu
   endif
 endfunc
 autocmd InsertEnter * :call ToggleNumber()
