@@ -124,9 +124,9 @@ nnoremap <C-A-L> <C-W><S-L>
 
 " =========== Language Specific Settings ===========
 autocmd FileType python set tabstop=4 | set shiftwidth=4
+autocmd BufWritePost *.tex Silent !pdflatex %
 
 " ================ Custom Functions ================
-" Toggles between number and realtive number when mode is changed
 function! ToggleNumber()
   if(&relativenumber == 1)
     set nornu
@@ -144,6 +144,8 @@ function! ToggleList()
     set list
   endif
 endfunc
+
+command! -nargs=+ Silent execute 'silent <args>' | redraw!
 
 " =================== Syntastic ====================
 set statusline+=%#warningmsg#
