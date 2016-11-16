@@ -31,3 +31,6 @@
 *.nav
 *.toc
 *.sock
+
+#Ignore intellij's files
+.idea/
