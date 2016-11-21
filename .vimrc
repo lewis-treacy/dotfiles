@@ -125,6 +125,7 @@ nnoremap <C-A-L> <C-W><S-L>
 " =========== Language Specific Settings ===========
 autocmd FileType python set tabstop=4 | set shiftwidth=4
 autocmd BufWritePost *.tex Silent !pdflatex %
+autocmd BufWritePost *.java Silent !find -iname *.java -exec javac -d out/ -cp out/ {} \;
 
 " ================ Custom Functions ================
 function! ToggleNumber()
