@@ -123,7 +123,7 @@ nnoremap <C-A-K> <C-W><S-K>
 nnoremap <C-A-L> <C-W><S-L>
 
 " =========== Language Specific Settings ===========
-autocmd FileType python set tabstop=4 | set shiftwidth=4
+autocmd FileType java set colorcolumn=100
 autocmd BufWritePost *.tex Silent !pdflatex %
 autocmd BufWritePost *.java Silent !find -iname *.java -exec javac -d out/ -cp out/ {} \;
 
