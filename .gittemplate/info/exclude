@@ -34,3 +34,4 @@
 
 #Ignore intellij's files
 .idea/
+*.iml
