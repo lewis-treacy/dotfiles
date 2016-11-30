@@ -107,5 +107,5 @@ fi
 source ~/.aliases.sh
 source ~/.theme.sh
 export GOPATH=$HOME/.go
-export PATH=$PATH:$GOROOT/bin:$GOPATH/bin
+export PATH=$PATH:$GOROOT/bin:$GOPATH/bin:~/.scripts
 export STO=/media/lewis/storage
