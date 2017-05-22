@@ -183,7 +183,7 @@ autocmd FileType vim set colorcolumn=100
 autocmd FileType tex set colorcolumn=""
 autocmd FileType python set tabstop=4 shiftwidt=4
 
-autocmd BufWritePost *.tex Silent !pdflatex %
+autocmd BufWritePost *.tex silent !pdflatex %
 
 
 " ======================================== Helper Functions ========================================
