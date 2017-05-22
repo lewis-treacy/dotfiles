@@ -32,6 +32,8 @@
 *.toc
 *.sock
 
+#Stuff what I added
+
 #Ignore intellij's files
 .idea/
 *.iml
