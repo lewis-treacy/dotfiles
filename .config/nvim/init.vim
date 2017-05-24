@@ -10,7 +10,7 @@ let mapleader = ","
 
 nmap <leader>w :w!<cr>
 
-command! W w !sudo tee % > /dev/null
+command! WW w !sudo tee % > /dev/null
 
 
 " ======================================= VIM user interface =======================================
