@@ -88,6 +88,9 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<cr>/<C-R>=@/<cr><cr>
 
 
 " ============================ Moving around, tabs, windows and buffers ============================
+map j gj
+map k gk
+
 map <space> /
 map <c-space> ?
 
@@ -181,6 +184,7 @@ map <leader>s? z=
 " ======================================= Language specific ========================================
 autocmd FileType vim set colorcolumn=100
 autocmd FileType tex set colorcolumn=""
+autocmd FileType tex set wrap
 autocmd FileType python set tabstop=4 shiftwidt=4
 
 autocmd BufWritePost *.tex silent !pdflatex %
