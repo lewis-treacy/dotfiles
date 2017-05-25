@@ -183,9 +183,8 @@ map <leader>s? z=
 
 " ======================================= Language specific ========================================
 autocmd FileType vim set colorcolumn=100
-autocmd FileType tex set colorcolumn=""
-autocmd FileType tex set wrap
-autocmd FileType python set tabstop=4 shiftwidt=4
+autocmd FileType tex set colorcolumn="" wrap
+autocmd BufReadPre *.c,*.py set tabstop=4 shiftwidth=4
 
 autocmd BufWritePost *.tex silent !pdflatex %
 
