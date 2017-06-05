@@ -20,6 +20,7 @@ set so=7
 "set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/DS_Store
 
 set number relativenumber
+set mouse=a
 set showcmd
 set clipboard=unnamedplus
 set nowrap
