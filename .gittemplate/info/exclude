@@ -37,3 +37,7 @@
 #Ignore intellij's files
 .idea/
 *.iml
+
+#Ignore CMake
+CMakeLists.txt
+cmake-build-debug
