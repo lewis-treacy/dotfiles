@@ -39,5 +39,4 @@
 *.iml
 
 #Ignore CMake
-CMakeLists.txt
-cmake-build-debug
+*cmake-build-debug/
