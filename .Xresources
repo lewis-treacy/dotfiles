@@ -1,0 +1,72 @@
+! Colour Theme
+#define col_background     #2B2E37
+#define col_black          #000000
+#define col_red            #D32F2F
+#define col_green          #388E3C
+#define col_yellow         #F57C00
+#define col_blue           #1976D2
+#define col_magenta        #8E24AA
+#define col_cyan           #00ACC1
+#define col_light_grey     #9E9E9E
+#define col_grey           #424242
+#define col_bright_red     #F44336
+#define col_bright_green   #7CB342
+#define col_bright_yellow  #FFC107
+#define col_bright_blue    #29B6F6
+#define col_bright_magenta #AB47BC
+#define col_bright_cyan    #26C6DA
+#define col_white          #ECEFF1
+
+! Colours
+*.foreground:         #ECEFF1
+*.cursorColor:        #ECEFF1
+*.background:         #2B2E37
+*.color0:             #000000
+*.color1:             #D32F2F
+*.color2:             #388E3C
+*.color3:             #F57C00
+*.color4:             #1976D2
+*.color5:             #8E24AA
+*.color6:             #00ACC1
+*.color7:             #9E9E9E
+*.color8:             #424242
+*.color9:             #F44336
+*.color10:            #7CB342
+*.color11:            #FFC107
+*.color12:            #29B6F6
+*.color13:            #AB47BC
+*.color14:            #26C6DA
+*.color15:            #ECEFF1
+
+*.highlightColor:     #424242
+*.highlightTextColor: #9E9E9E
+
+! URxvt
+URxvt.font:                xft:Source Code Pro Medium:pixelsize=14, xft:FontAwesome:pixelsize=10
+URxvt.boldFont:            xft:Source Code Pro Medium:pixelsize=14:bold
+URxvt.italicFont:          xft:Source Code Pro Medium:pixelsize=14:italic
+URxvt.boldItalicFont:      xft:Source Code Pro Medium:pixelsize=14:bold:italic
+URxvt.letterSpace:         -1
+URxvt.scrollBar:           false
+URxvt*fading:              20
+URxvt.depth:               32
+URxvt.internalBorder:      0
+URxvt.externalBorder:      0
+
+URxvt.perl-ext-common:     default,matcher,clipboard,resize-font,fullscreen
+URxvt.urlLauncher:         /usr/bin/firefox
+URxvt.keysym.F11:          perl:fullscreen:switch
+URxvt.resize-font.smaller: C-Down
+URxvt.resize-font.bigger:  C-Up
+URxvt.iso14755:            False
+URxvt.clipboard.copycmd:   xsel -ib
+URxvt.clipboard.pastecmd:  xsel -ob
+
+! rofi
+rofi.color-enabled:   true
+rofi.color-window:    #2B2E37, #F57C00, #ECEFF1
+rofi.color-normal:    #2B2E37, #ECEFF1, #2B2E37, #ECEFF1, #2B2E37
+rofi.color-active:    #2B2E37, #29B6F6, #2B2E37, #29B6F6, #2B2E37
+rofi.color-urgent:    #2B2E37, #D32F2F, #2B2E37, #D32F2F, #2B2E37
+rofi.separator-style: solid
+
