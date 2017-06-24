@@ -31,3 +31,5 @@ bspc config presel_feedback_color "#7CB342"
 bspc rule -a Firefox desktop='^1'
 
 $HOME/.config/polybar/launch.sh
+
+setxkbmap -layout gb
