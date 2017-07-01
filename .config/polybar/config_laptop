@@ -1,0 +1,10 @@
+[section/base]
+include-file = /home/lewis/.config/polybar/config
+
+
+; laptop bar
+[bar/bar3]
+inherit = bar/main
+monitor = ${env:MONITOR:eDP-1}
+modules-left = bspwm
+modules-right = net sep mem sep cpu sep temp sep date sep powermenu

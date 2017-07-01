@@ -44,20 +44,6 @@ scroll-up = bspwm-desknext
 scroll-down = bspwm-deskprev
 
 
-[bar/bar1]
-inherit = bar/main
-monitor = ${env:MONITOR:DP-0}
-modules-left = bspwm
-modules-right = net sep mem sep cpu sep temp sep powermenu
-
-
-[bar/bar2]
-inherit = bar/main
-monitor = ${env:MONITOR:HDMI-0}
-modules-left = bspwm
-modules-right = date
-
-
 [module/sep]
 type = custom/text
 content = "|"

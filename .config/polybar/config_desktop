@@ -1,0 +1,26 @@
+[section/base]
+include-file = $HOME/.config/polybar/config
+
+
+; main monitor bar
+[bar/bar1]
+inherit = bar/main
+monitor = ${env:MONITOR:DP-0}
+modules-left = bspwm
+modules-right = net sep mem sep cpu sep temp sep powermenu
+
+
+; right monitor bar
+[bar/bar2]
+inherit = bar/main
+monitor = ${env:MONITOR:HDMI-0}
+modules-left = bspwm
+modules-right = date
+
+
+; single monitor bar
+[bar/temp]
+inherit = bar/main
+monitor = ${env:MONITOR:DP-0}
+modules-left = bspwm
+modules-right = net sep mem sep cpu sep temp sep date sep powermenu
