@@ -11,7 +11,7 @@ bspc config gapless_monocle      true
 bspc config paddingless_monocle  false
 bspc config click_to_focus       true
 
-feh --bg-center ~/neumann/pictures/wallpapers/arch/arch3440x1920.jpg
+feh --bg-center ~/.config/wallpaper
 
 # MONITORS
 if [[ $(hostname) == "GLaDOS" ]]; then
