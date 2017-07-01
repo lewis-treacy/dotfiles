@@ -37,7 +37,6 @@
 *.color13:            #AB47BC
 *.color14:            #26C6DA
 *.color15:            #ECEFF1
-
 *.highlightColor:     #424242
 *.highlightTextColor: #9E9E9E
 
@@ -70,3 +69,6 @@ rofi.color-active:    #2B2E37, #29B6F6, #2B2E37, #29B6F6, #2B2E37
 rofi.color-urgent:    #2B2E37, #D32F2F, #2B2E37, #D32F2F, #2B2E37
 rofi.separator-style: solid
 
+! cursor theme
+Xcursor.theme: Breeze_Obsidian
+Xcursor.size: 8
