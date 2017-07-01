@@ -1,5 +1,5 @@
 [section/base]
-include-file = $HOME/.config/polybar/config
+include-file = /home/lewis/.config/polybar/config
 
 
 ; main monitor bar
