@@ -8,3 +8,4 @@ inherit = bar/main
 monitor = ${env:MONITOR:eDP-1}
 modules-left = bspwm
 modules-right = net sep mem sep cpu sep temp sep date sep powermenu
+net-interface = wlp1s0
