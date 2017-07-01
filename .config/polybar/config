@@ -150,7 +150,8 @@ label-warn-foreground = ${colors.secondary}
 
 [module/net]
 type = internal/network
-interface = enp0s31f6
+; net-interface needs to be defined in the bar
+interface = ${root.net-interface}
 interval = 1
 
 ;format-connected-prefix = " "
