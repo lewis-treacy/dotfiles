@@ -7,7 +7,7 @@
 *.pdf
 
 #ignore junk files from latex output
-*.adt
+*.odt
 *.out
 *.log
 *.aux
