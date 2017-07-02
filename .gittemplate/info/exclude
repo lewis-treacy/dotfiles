@@ -7,6 +7,7 @@
 *.pdf
 
 #ignore junk files from latex output
+*.adt
 *.out
 *.log
 *.aux
@@ -14,7 +15,7 @@
 *.ps
 
 #ignore junk files from compiling C code
-*.o
+*.[ao]
 
 #ignore junk files from compiling Haskell code
 *.hi
@@ -40,3 +41,4 @@
 
 #Ignore CMake
 *cmake-build-debug/
+
