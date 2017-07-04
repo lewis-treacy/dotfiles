@@ -35,3 +35,4 @@ $HOME/.config/polybar/launch.sh
 
 setxkbmap -layout gb
 xsetroot -cursor_name left_ptr
+xset -dpms
