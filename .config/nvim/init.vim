@@ -27,7 +27,7 @@ set nowrap
 set linebreak
 
 set list
-set listchars=eol:¬,trail:~,space:·
+set listchars=eol:¬,trail:~,space:·,tab:>-
 
 set ruler
 set colorcolumn=80
@@ -97,10 +97,14 @@ map <c-space> ?
 
 map <silent> <leader><cr> :noh<cr>
 
-map <C-h> <C-W>h
-map <C-j> <C-W>j
-map <C-k> <C-W>k
-map <C-l> <C-W>l
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+map <C-S-H> <C-w>H
+map <C-S-J> <C-w>J
+map <C-S-K> <C-w>K
+map <C-S-L> <C-w>L
 
 map <leader>bd :Bclose<cr>:tabclose<cr>gT
 map <leader>ba :bufdo bd<cr>
@@ -185,7 +189,8 @@ map <leader>s? z=
 " ======================================= Language specific ========================================
 autocmd FileType vim set colorcolumn=100
 autocmd FileType tex set colorcolumn="" wrap
-autocmd BufReadPre *.c,*.py set tabstop=4 shiftwidth=4
+autocmd BufEnter *.c,*.py set tabstop=4 shiftwidth=4
+autocmd BufEnter *.go set tabstop=4 shiftwidth=4 noexpandtab
 
 autocmd BufWritePost *.tex silent !pdflatex %
 
