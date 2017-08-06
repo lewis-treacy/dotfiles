@@ -174,7 +174,7 @@ fun! CleanExtraSpaces()
   call setreg('/', old_query)
 endfun
 
-autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.c,*.tex :call CleanExtraSpaces()
+autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.c,*.tex,*rc :call CleanExtraSpaces()
 
 
 " ========================================= Spell Checking =========================================
