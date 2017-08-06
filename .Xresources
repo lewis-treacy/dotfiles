@@ -91,7 +91,7 @@ URxvt.clipboard.pastecmd:  xsel -ob
 ! rofi
 rofi.color-enabled:   true
 ! background, border, line
-rofi.color-window:    #2B2E37, #FFB300, #ECEFF1
+rofi.color-window:    #2B2E37, #FB8C00, #ECEFF1
 ! background1, text1, background2, text2, background_sel, text_sel
 rofi.color-normal:    #2B2E37, #ECEFF1, #2B2E37, #ECEFF1, #2B2E37
 rofi.color-active:    #2B2E37, #039BE5, #2B2E37, #039BE5, #2B2E37
