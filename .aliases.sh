@@ -1,5 +1,7 @@
-alias ls='ls -la --color=auto'
+alias ls="ls -la --color=auto"
 
-alias v='nvim'
-alias vi='nvim'
-alias vim='nvim'
+alias v="nvim"
+alias vi="nvim"
+alias vim="nvim"
+
+alias sysinfo="neofetch --disable theme icons --block_width 4 --block_range 0 15 --colors 1 15 15 1 15 15 --ascii_colors 4 4 --ascii_bold off --bold off && ~/scripts/color-scripts/hex"
