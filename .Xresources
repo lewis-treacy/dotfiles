@@ -65,7 +65,7 @@
 
 ! grey 600, 900
 *.highlightColor:     #757575
-*.highlightTextColor: #212121
+*.highlightTextColor: #FFFFFF
 
 ! URxvt
 URxvt.font:                xft:Source Code Pro Medium:pixelsize=14, xft:FontAwesome:pixelsize=10
