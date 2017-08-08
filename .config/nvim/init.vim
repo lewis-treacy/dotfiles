@@ -101,10 +101,10 @@ map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
-map <C-S-H> <C-w>H
-map <C-S-J> <C-w>J
-map <C-S-K> <C-w>K
-map <C-S-L> <C-w>L
+map <S-H> <C-w>H
+map <S-J> <C-w>J
+map <S-K> <C-w>K
+map <S-L> <C-w>L
 
 map <leader>bd :Bclose<cr>:tabclose<cr>gT
 map <leader>ba :bufdo bd<cr>
