@@ -37,6 +37,7 @@ setxkbmap -layout gb
 setxkbmap -option caps:escape
 xsetroot -cursor_name left_ptr
 
+xset -dpms
 xset s off
 
 wmname LG3D
