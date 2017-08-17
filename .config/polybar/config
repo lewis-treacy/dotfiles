@@ -193,6 +193,8 @@ format-discharging-prefix = " "
 format-discharging-prefix-foreground = ${colors.foreground-alt}
 label-discharging = %percentage%%
 
+format-full-underline = ${colors.primary}
+
 
 [global/wm]
 margin-top = 0
