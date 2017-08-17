@@ -112,3 +112,7 @@ XF86AudioMute
 # spotify play, stop, next and previous
 {XF86AudioPlay,XF86AudioStop,XF86AudioNext,XF86AudioPrev}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Stop,Next,Previous}
+
+################################### backlight ##################################
+XF86MonBrightness{Up,Down}
+  xbacklight -{inc,dec} 5
