@@ -173,6 +173,27 @@ format-disconnected-prefix-foreground = ${colors.foreground-alt}
 format-disconnected-underline = ${colors.primary}
 
 
+[module/bat]
+type = internal/battery
+full-at = 99
+
+battery = BAT0
+adapter = AC
+poll-interval = 5
+
+format-charging = <label-charging>
+format-charging-underline = ${colors.primary}
+format-charging-prefix = " "
+format-charging-prefix-foreground = ${colors.foreground-alt}
+label-charging = %percentage%%
+
+format-discharging = <label-discharging>
+format-discharging-underline = ${colors.primary}
+format-discharging-prefix = " "
+format-discharging-prefix-foreground = ${colors.foreground-alt}
+label-discharging = %percentage%%
+
+
 [global/wm]
 margin-top = 0
 margin-bottom = 0
