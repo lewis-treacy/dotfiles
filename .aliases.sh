@@ -1,4 +1,5 @@
-alias ls="ls -la --color=auto"
+alias ls="ls -l --color=auto"
+alias la="ls -A"
 
 alias v="nvim"
 alias vi="nvim"
