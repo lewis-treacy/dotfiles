@@ -1,7 +1,7 @@
 ############################ wm independent hotkeys ############################
 # terminal emulator
 super + Return
-  urxvt
+  termite
 
 # program launcher
 super + space
