@@ -115,4 +115,4 @@ XF86AudioMute
 
 ################################### backlight ##################################
 XF86MonBrightness{Up,Down}
-  xbacklight -{inc,dec} 5
+  brightnessctl s {+5%,5%-}
