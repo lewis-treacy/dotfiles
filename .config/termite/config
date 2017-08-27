@@ -32,8 +32,8 @@ filter_unmatched_urls = true
 #modify_other_keys = false
 
 [colors]
-# grey 900, 600
-color0 =         #212121
+# grey 800, 600
+color0 =         #424242
 color8 =         #757575
 
 # red 600, 400
@@ -66,4 +66,4 @@ color15 =        #FFFFFF
 
 highlight = #757575
 foreground = #ECEFF1
-background = #2B2E37
+background = #212121
