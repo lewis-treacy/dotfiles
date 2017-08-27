@@ -1,3 +1,25 @@
+" ============================================ Plugins =============================================
+call plug#begin('~/.local/share/nvim/plugged')
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-surround'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-sensible'
+  Plug 'airblade/vim-gitgutter'
+  Plug 'vim-airline/vim-airline'
+  Plug 'vim-airline/vim-airline-themes'
+  Plug 'scrooloose/syntastic'
+  Plug 'scrooloose/nerdtree'
+  Plug 'xuyuanp/nerdtree-git-plugin'
+  Plug 'ctrlpvim/ctrlp.vim'
+  Plug 'majutsushi/tagbar'
+  Plug 'easymotion/vim-easymotion'
+  Plug 'valloric/youcompleteme'
+  Plug 'sirver/ultisnips'
+  Plug 'honza/vim-snippets'
+call plug#end()
+
+
 " ============================================ General =============================================
 set history=1000
 
@@ -5,15 +27,10 @@ filetype plugin on
 filetype indent on
 
 set autoread
-
 let mapleader = ","
 
-nmap <leader>w :w!<cr>
 
-command! Sw w !sudo tee % > /dev/null
-
-
-" ======================================= VIM user interface =======================================
+" ========================================= User interface =========================================
 set so=7
 
 "set wildmenu
@@ -43,6 +60,7 @@ set lazyredraw
 set magic
 set showmatch
 set mat=2
+set laststatus=2
 
 set noerrorbells
 set novisualbell
@@ -50,12 +68,15 @@ set t_vb=
 set tm=500
 
 set foldcolumn=1
+set updatetime=250
 
 
 " ======================================= Colours and Fonts ========================================
 syntax enable
-
 set background=dark
+
+set t_Co=256
+
 set encoding=utf8
 highlight SpecialKey ctermfg=darkgrey
 highlight NonText ctermfg=darkgrey
@@ -111,17 +132,17 @@ map <leader>ba :bufdo bd<cr>
 map <leader>l :bnext<cr>
 map <leader>h :bprevious<cr>
 
-map <leader>tn :tabnew<cr>
-map <leader>to :taonly<cr>
-map <leader>tc :tabclose<cr>
-map <leader>tm :tabmove<cr>
+map <leader>nt :tabnew<cr>
+map <leader>ot :taonly<cr>
+map <leader>ct :tabclose<cr>
+map <leader>mt :tabmove<cr>
 map <leader>t<leader> :tabnext<cr>
 
 let g:lasttab = 1
-nmap <leader>tl :exe "tabn ".g:lasttab<cr>
+nmap <leader>lt :exe "tabn ".g:lasttab<cr>
 autocmd TabLeave * let g:lasttab = tabpagenr()
 
-map <leader>te :tabedit <c-r>=expand("%:p:h")<cr>/
+map <leader>et :tabedit <c-r>=expand("%:p:h")<cr>/
 map <leader>cd :cd %:p:h<cr>:pwd<cr>
 
 try
@@ -131,11 +152,6 @@ catch
 endtry
 
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
-
-
-" ========================================== Status line ===========================================
-set laststatus=2
-set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:%l\ \ Column:%c
 
 
 " ========================================= Disable Arrows =========================================
@@ -155,6 +171,7 @@ map E $
 map ; :
 
 imap <S-Tab> <C-D>
+command! Sw w !sudo tee % > /dev/null
 
 nmap <M-j> mz:m+<cr>`z
 nmap <M-k> mz:m-2<cr>`z
@@ -163,21 +180,11 @@ vmap <M-k> :m'<-2<cr>`>my`<mzgv`yo`z
 
 nmap <leader>ev :vsp $MYVIMRC<cr>
 nmap <leader>sv :so $MYVIMRC<cr>
-nma <leader>tn :call ToggleNumbers()<cr>
+nmap <leader>tn :call ToggleNumbers()<cr>
 nmap <leader>tl :call ToggleList()<cr>
+nmap <leader>tb  :NERDTreeToggle<cr>
+nmap <leader>tt :TagbarToggle<cr>
 
-fun! CleanExtraSpaces()
-  let save_cursor = getpos(".")
-  let old_query = getreg('\')
-  silent! %s/\s\+$//e
-  call setpos('.', save_cursor)
-  call setreg('/', old_query)
-endfun
-
-autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.c,*.tex,*rc :call CleanExtraSpaces()
-
-
-" ========================================= Spell Checking =========================================
 map <leader>ss :setlocal spell!<cr>
 
 map <leader>sn ]s
@@ -185,8 +192,12 @@ map <leader>sp [s
 map <leader>sa zg
 map <leader>s? z=
 
+silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
+
 
 " ======================================= Language specific ========================================
+autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.c,*.tex,*rc :call CleanExtraSpaces()
+
 autocmd FileType vim set colorcolumn=100
 autocmd FileType tex set colorcolumn="" wrap
 autocmd BufEnter *.c,*.py set tabstop=4 shiftwidth=4
@@ -213,3 +224,67 @@ fun! ToggleList()
     set list
   endif
 endfun
+
+fun! CleanExtraSpaces()
+  let save_cursor = getpos(".")
+  let old_query = getreg('\')
+  silent! %s/\s\+$//e
+  call setpos('.', save_cursor)
+  call setreg('/', old_query)
+endfun
+
+
+" ============================================= Airline ============================================
+let g:airline_powerline_fonts = 1
+let g:airline_theme='deus'
+
+
+" ============================================ Syntastic ===========================================
+let g:syntastic_always_populate_loc_list = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
+let g:syntastic_check_on_wq = 0
+let g:syntastic_aggregate_errors = 1
+
+let g:syntastic_go_checkers = ['go', 'gofmt']
+let g:syntastic_tex_checkers = ['lacheck', 'text/language_check']
+
+
+" ============================================== CtrlP =============================================
+let g:ctrlp_show_hidden = 1
+
+
+" ============================================== Tagbar ============================================
+let g:tagbar_type_go = {
+  \ 'ctagstype' : 'go',
+  \ 'kinds'     : [
+    \ 'p:package',
+    \ 'i:imports:1',
+    \ 'c:constants',
+    \ 'v:variables',
+    \ 't:types',
+    \ 'n:interfaces',
+    \ 'w:fields',
+    \ 'e:embedded',
+    \ 'm:methods',
+    \ 'r:constructor',
+    \ 'f:functions'
+  \ ],
+  \ 'sro' : '.',
+  \ 'kind2scope' : {
+    \ 't' : 'ctype',
+    \ 'n' : 'ntype'
+  \ },
+  \ 'scope2kind' : {
+    \ 'ctype' : 't',
+    \ 'ntype' : 'n'
+  \ },
+  \ 'ctagsbin'  : 'gotags',
+  \ 'ctagsargs' : '-sort -silent'
+\ }
+
+
+" ============================================ UltiSnips ===========================================
+let g:UltiSnipsExpandTrigger="<c-l>"
+let g:UltiSnipsJumpForwardTrigger="<c-l>"
+let g:UltiSnipsJumpBackwardTrigger="<c-h>"
