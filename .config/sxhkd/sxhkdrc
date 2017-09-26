@@ -1,7 +1,7 @@
 ############################ wm independent hotkeys ############################
 # terminal emulator
 super + Return
-  termite
+  termite -e fish
 
 # program launcher
 super + space
