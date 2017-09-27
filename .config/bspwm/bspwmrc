@@ -15,9 +15,8 @@ feh --bg-center ~/.config/wallpaper
 
 # MONITORS
 if [[ $(hostname) == "GLaDOS" ]]; then
-  # bspc monitor DP-0 -d I II III IV V
-  # bspc monitor HDMI-0 -d VI VII VIII IX X
-  bspc monitor -d I II III IV V VI VII VIII IX X
+  bspc monitor DP-0 -d I II III IV V
+  bspc monitor HDMI-0 -d VI VII VIII IX X
 else
   bspc monitor -d I II III IV V VI VII VIII IX X
 fi
