@@ -9,7 +9,7 @@ setxkbmap -option caps:escape
 set EDITOR nvim
 set LANG en_GB.UTF-8
 set PATH /usr/local/bin $HOME/.go/bin $PATH
-set GOPATH $HOME/.go $GOPATH
+export GOPATH="$HOME/.go"
 
 set fish_color_autosuggestion brgrey
 set fish_color_command green
