@@ -21,6 +21,9 @@ super + alt + Escape
 super + {_,shift} + w
   bspc node -{c,k}
 
+button8
+  bspc node -c
+
 
 ################################# state/flags ##################################
 # set the window state
@@ -97,7 +100,7 @@ super + {Left,Down,Up,Right}
 
 # rotate/balance
 super + {_,shift} + semicolon
-    bspc node $(bspc query -N -n -n .!leaf || echo @/) {-R 90,-B}
+  bspc node $(bspc query -N -n -n .!leaf || echo @/) {-R 90,-B}
 
 
 ################################ media controls ################################
@@ -116,6 +119,10 @@ XF86AudioMute
 # spotify play, next and previous for laptop
 ctrl + {XF86AudioMute,XF86AudioRaiseVolume,XF86AudioLowerVolume}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Next,Previous}
+
+# on mouse button 9 press F5
+button9
+  xte "keydown F5" "keyup F5"
 
 ################################## backlight ###################################
 XF86MonBrightness{Up,Down}

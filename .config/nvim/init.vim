@@ -199,7 +199,7 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.c,*.tex,*rc :call CleanExtraSpaces()
 
 autocmd FileType vim set colorcolumn=100
-autocmd FileType tex,markdown set colorcolumn=140
+autocmd FileType tex,markdown set colorcolumn=100
 autocmd BufEnter *.c,*.py set tabstop=4 shiftwidth=4
 autocmd BufEnter *.go set tabstop=4 shiftwidth=4 noexpandtab
 
