@@ -13,10 +13,12 @@ bspc config click_to_focus       true
 
 # MONITORS
 if [[ $(hostname) == "GLaDOS" ]]; then
+  # Desktop
   xrandr --output DP-0 --auto --pos 0x220 --output HDMI-0 --auto --pos 3440x0
   bspc monitor DP-0 -d I II III IV V
   bspc monitor HDMI-0 -d VI VII VIII IX X
 else
+  # Laptop
   bspc monitor -d I II III IV V VI VII VIII IX X
 fi
 
@@ -30,8 +32,17 @@ bspc config presel_feedback_color "#757575"
 
 # RULES
 bspc rule -a Mullvad state=floating
+bspc rule -a Termite state=floating
+if [[ $(hostname) == "GLaDOS" ]]; then
+  # Desktop
+  bspc rule -a Spotify desktop=^6
+  bspc rule -a Nautilus state=floating rectangle=1024x576+1208+432
+else
+  # Laptop
+  bspc rule -a Nautilus state=floating rectangle=1024x576+448+252
+fi
 
-$HOME/.config/polybar/launch.sh
+bash $HOME/.config/polybar/launch.sh
 
 setxkbmap -layout gb
 setxkbmap -option caps:escape
