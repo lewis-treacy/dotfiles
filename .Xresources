@@ -67,27 +67,6 @@
 *.highlightColor:     #757575
 *.highlightTextColor: #FFFFFF
 
-! URxvt
-URxvt.font:                xft:Source Code Pro Medium:pixelsize=14, xft:FontAwesome:pixelsize=10
-URxvt.boldFont:            xft:Source Code Pro Medium:pixelsize=14:bold
-URxvt.italicFont:          xft:Source Code Pro Medium:pixelsize=14:italic
-URxvt.boldItalicFont:      xft:Source Code Pro Medium:pixelsize=14:bold:italic
-URxvt.letterSpace:         -1
-URxvt.scrollBar:           false
-URxvt*fading:              20
-URxvt.depth:               32
-URxvt.internalBorder:      0
-URxvt.externalBorder:      0
-
-URxvt.perl-ext-common:     default,matcher,clipboard,resize-font,fullscreen
-URxvt.urlLauncher:         /usr/bin/firefox
-URxvt.keysym.F11:          perl:fullscreen:switch
-URxvt.resize-font.smaller: C-Down
-URxvt.resize-font.bigger:  C-Up
-URxvt.iso14755:            False
-URxvt.clipboard.copycmd:   xsel -ib
-URxvt.clipboard.pastecmd:  xsel -ob
-
 ! rofi
 rofi.color-enabled:   true
 ! background, border, line
