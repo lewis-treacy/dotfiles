@@ -39,8 +39,8 @@ tray-padding = 2
 
 wm-restack = bspwm
 
-scroll-up = bspwm-desknext
-scroll-down = bspwm-deskprev
+; scroll-up = bspwm-desknext
+; scroll-down = bspwm-deskprev
 
 
 [module/sep]
@@ -53,6 +53,9 @@ content-padding = 1
 
 [module/bspwm]
 type = internal/bspwm
+
+enable-click = false
+enable-scroll = false
 
 label-focused = 
 label-focused-foreground = ${colors.foreground}
