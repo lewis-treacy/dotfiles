@@ -11,12 +11,13 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'scrooloose/syntastic'
   Plug 'scrooloose/nerdtree'
   Plug 'xuyuanp/nerdtree-git-plugin'
-  Plug 'ctrlpvim/ctrlp.vim'
   Plug 'majutsushi/tagbar'
   Plug 'easymotion/vim-easymotion'
   Plug 'valloric/youcompleteme'
   Plug 'sirver/ultisnips'
   Plug 'honza/vim-snippets'
+  Plug 'junegunn/vim-easy-align'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 call plug#end()
 
 
