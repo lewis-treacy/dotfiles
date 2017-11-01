@@ -57,19 +57,23 @@ type = internal/bspwm
 enable-click = false
 enable-scroll = false
 
-label-focused = 
+label-focused = %name%
+; label-focused = 
 label-focused-foreground = ${colors.foreground}
 label-focused-background = ${colors.background}
-label-focused-underline= ${colors.primary}
+label-focused-underline = ${colors.primary}
 label-focused-padding = 1
 
-label-occupied = 
+label-occupied = %name%
+; label-occupied = 
 ; label-occupied = 
 label-occupied-foreground = ${colors.foreground-alt}
 label-occupied-padding = 1
 
-label-urgent = 
-label-urgent-background = ${colors.alert}
+label-urgent = %name%
+; label-urgent = 
+; label-urgent-background = ${colors.alert}
+label-urgent-underline = ${colors.alert}
 label-urgent-padding = 1
 
 label-empty = " "

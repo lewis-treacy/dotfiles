@@ -15,11 +15,11 @@ bspc config click_to_focus       true
 if [[ $(hostname) == "GLaDOS" ]]; then
   # Desktop
   xrandr --output DP-0 --auto --pos 0x220 --output HDMI-0 --auto --pos 3440x0
-  bspc monitor DP-0 -d I II III IV V
-  bspc monitor HDMI-0 -d VI VII VIII IX X
+  bspc monitor DP-0 -d 1 2 3 4 5
+  bspc monitor HDMI-0 -d 6 7 8 9 10
 else
   # Laptop
-  bspc monitor -d I II III IV V VI VII VIII IX X
+  bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 fi
 
 feh --bg-center ~/.config/wallpaper
