@@ -1,4 +1,4 @@
-alias ls "ls -l --color=auto"
+alias ls "ls -lh --color=auto"
 alias la "ls -A"
 
 alias v vim
