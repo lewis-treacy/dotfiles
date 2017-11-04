@@ -9,7 +9,7 @@ setxkbmap -option caps:escape
 set -U SXHKD_SHELL /bin/bash
 set EDITOR nvim
 set LANG en_GB.UTF-8
-set PATH /usr/local/bin $HOME/.go/bin $PATH
+set PATH /usr/local/bin $HOME/.go/bin $HOME/scripts $PATH
 export GOPATH="$HOME/.go"
 export VISUAL="vim"
 
