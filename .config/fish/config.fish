@@ -11,6 +11,7 @@ set EDITOR nvim
 set LANG en_GB.UTF-8
 set PATH /usr/local/bin $HOME/.go/bin $PATH
 export GOPATH="$HOME/.go"
+export VISUAL="vim"
 
 set fish_color_autosuggestion brgrey
 set fish_color_command green
