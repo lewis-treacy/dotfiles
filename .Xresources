@@ -67,16 +67,6 @@
 *.highlightColor:     #757575
 *.highlightTextColor: #FFFFFF
 
-! rofi
-rofi.color-enabled:   true
-! background, border, line
-rofi.color-window:    #212121, #FB8C00, #ECEFF1
-! background1, text1, background2, text2, background_sel, text_sel
-rofi.color-normal:    #212121, #ECEFF1, #212121, #ECEFF1, #212121
-rofi.color-active:    #212121, #039BE5, #212121, #039BE5, #212121
-rofi.color-urgent:    #212121, #E53935, #212121, #E53935, #212121
-rofi.separator-style: solid
-
 ! cursor theme
 Xcursor.theme: Breeze_Obsidian
 Xcursor.size: 8

@@ -1,0 +1,56 @@
+* {
+    dark-grey:   #212121;
+    white:       #ECEFF1;
+    urgent:      #E53935;
+    active:      #039BE5;
+    orange:      #FB8C00;
+
+    background-color: @dark-grey;
+    color: @white;
+    font: "Hack 14px";
+}
+
+#window {
+    padding: 2px;
+    background-color: @orange;
+    color: @test;
+}
+
+#listview {
+    padding: 5px;
+}
+
+#element {
+    padding: 1px;
+}
+#element.normal.urgent {
+    color: @urgent;
+}
+#element.normal.active {
+    color: @active;
+}
+#element.selected.normal {
+    color: @dark-grey;
+    background-color: @white;
+}
+#element.selected.urgent {
+    color: @urgent;
+    background-color: @white;
+}
+#element.selected.active {
+    color: @active;
+    background-color: @active;
+}
+#element.alternate.urgent {
+    color: @urgent;
+}
+#element.alternate.active {
+    color: @active;
+}
+#inputbar {
+    padding: 5px 5px 0px 5px;
+}
+
+#message {
+    padding: 5px ;
+}
