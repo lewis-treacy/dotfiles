@@ -32,7 +32,7 @@
 *.cursorColor:        #ECEFF1
 
 ! grey 800, 600
-*color0:              #424242
+*color0:              #333333
 *color8:              #757575
 
 ! red 600, 400
