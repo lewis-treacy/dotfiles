@@ -33,6 +33,7 @@ bspc config presel_feedback_color "#757575"
 # RULES
 bspc rule -a Mullvad state=floating
 bspc rule -a Termite state=floating
+bspc rule -a Lightscreen state=floating
 if [[ $(hostname) == "GLaDOS" ]]; then
   # Desktop
   bspc rule -a Spotify desktop=^6
