@@ -90,6 +90,8 @@ interval = 1
 
 date = %a %d %b
 time = %H:%M:%S
+date-alt = %Y-%m-%d
+time-alt = %H:%M:%S
 
 ; format-underline = ${colors.primary}
 
