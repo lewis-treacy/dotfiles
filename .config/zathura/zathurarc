@@ -1,3 +1,5 @@
 map . navigate
 map , navigate previous
 set selection-clipboard clipboard
+set highlight-color grey
+set highlight-active-color grey
