@@ -1,0 +1,3 @@
+map . navigate
+map , navigate previous
+set selection-clipboard clipboard
