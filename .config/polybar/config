@@ -7,6 +7,7 @@ foreground-dark = ${xrdb:*.color8}
 primary         = ${xrdb:*.color3}
 secondary       = ${xrdb:*.color4}
 alert           = ${xrdb:*.color1}
+green           = ${xrdb:*.color2}
 
 
 [bar/main]
@@ -100,12 +101,10 @@ type = custom/menu
 
 menu-0-0 = Shutdown
 menu-0-0-foreground = ${colors.alert}
-
 menu-0-0-exec = shutdown -t 0
 
 menu-0-1 = Reboot
 menu-0-1-foreground = ${colors.primary}
-
 menu-0-1-exec = reboot
 
 label-open = 
@@ -182,6 +181,7 @@ poll-interval = 5
 format-charging = <label-charging>
 ; format-charging-underline = ${colors.primary}
 format-charging-prefix = " "
+format-charging-prefix-foreground = ${colors.green}
 label-charging = %percentage%%
 
 format-discharging = <label-discharging>
@@ -190,6 +190,7 @@ format-discharging-prefix = " "
 label-discharging = %percentage%%
 
 format-full-prefix = " "
+format-full-prefix-foreground = ${colors.green}
 ; format-full-underline = ${colors.primary}
 
 
