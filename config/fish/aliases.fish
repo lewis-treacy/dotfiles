@@ -6,6 +6,7 @@ alias yas "yaourt -Syua"
 
 alias v vim
 alias vi vim
+alias wim vim
 alias vim nvim
 
 alias sysinfo "neofetch; hex"
