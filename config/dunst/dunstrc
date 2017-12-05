@@ -1,6 +1,6 @@
 [global]
     monitor = 0
-    geometry = "0x10-0+0"
+    geometry = "0x10-1+1"
     indicate_hidden = yes
     shrink = no
     transparency = 0
