@@ -88,7 +88,7 @@ type = custom/menu
 
 menu-0-0 = Shutdown
 menu-0-0-foreground = ${colors.alert}
-menu-0-0-exec = shutdown -t 0
+menu-0-0-exec = shutdown now
 
 menu-0-1 = Reboot
 menu-0-1-foreground = ${colors.primary}
