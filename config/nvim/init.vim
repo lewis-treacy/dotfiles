@@ -197,7 +197,7 @@ silent! call repeat#set("\<Plug>MyWonderfulMap", v:count)
 
 
 " ======================================= Language specific ========================================
-autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.c,*.tex,*rc :call CleanExtraSpaces()
+autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.tex,*rc :call CleanExtraSpaces()
 
 autocmd FileType vim set colorcolumn=100
 autocmd FileType tex,markdown set colorcolumn=100
