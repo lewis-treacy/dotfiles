@@ -10,3 +10,5 @@ alias wim vim
 alias vim nvim
 
 alias sysinfo "neofetch; hex"
+
+alias msf "msfconsole -x \"db_connect lewis@msf\""
