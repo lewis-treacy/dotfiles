@@ -76,11 +76,11 @@ label-empty-padding = 1
 type = internal/date
 interval = 1
 
-date = %a %d %b
-time = %H:%M:%S
-date-alt = %Y-%m-%d
-time-alt = %H:%M:%S
-label = %date% %time%
+date = %Y-%m-%d
+time = T%H:%M:%SZ
+date-alt = %a %d %b
+time-alt = " %H:%M:%S"
+label = %date%%time%
 
 
 [module/powermenu]
