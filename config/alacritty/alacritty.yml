@@ -17,14 +17,14 @@ env:
 # Window dimensions in character columns and lines
 # Falls back to size specified by window manager if set to 0x0.
 # (changes require restart)
-dimensions:
+window.dimensions:
   columns: 96
   lines: 32
 
 # Adds this many blank pixels of padding around the window
 # Units are physical pixels; this is not DPI aware.
 # (change requires restart)
-padding:
+window.padding:
   x: 5
   y: 5
 
