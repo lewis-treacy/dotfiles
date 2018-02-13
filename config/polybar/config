@@ -86,21 +86,21 @@ label = %date%%time%
 [module/powermenu]
 type = custom/menu
 
-menu-0-0 = Shutdown
-menu-0-0-foreground = ${colors.alert}
-menu-0-0-exec = shutdown now
+menu-0-0 = 
+menu-0-0-foreground = ${colors.primary}
+menu-0-0-exec = reboot
 
-menu-0-1 = Reboot
-menu-0-1-foreground = ${colors.primary}
-menu-0-1-exec = reboot
+menu-0-1 = 
+menu-0-1-foreground = ${colors.alert}
+menu-0-1-exec = shutdown now
 
 label-open = 
 label-open-foreground = ${colors.alert}
 
-label-close = Cancel
+label-close = 
 label-close-foreground = ${colors.foreground-alt}
 
-label-separator = " : "
+label-separator = " "
 
 
 [module/cpu]
