@@ -7,7 +7,7 @@ include-file = /home/lewis/.config/polybar/config
 inherit = bar/main
 monitor = ${env:MONITOR:DP-0}
 modules-left = bspwm
-modules-right = net sep mem sep cpu sep temp sep powermenu
+modules-right = net sep mem sep cpu sep temp sep power
 net-interface = wlp4s0
 
 

@@ -83,24 +83,14 @@ time-alt = " %H:%M:%S"
 label = %date%%time%
 
 
-[module/powermenu]
-type = custom/menu
+[module/power]
+type = custom/text
+content = 
 
-menu-0-0 = 
-menu-0-0-foreground = ${colors.primary}
-menu-0-0-exec = reboot
+content-foreground = ${colors.alert}
 
-menu-0-1 = 
-menu-0-1-foreground = ${colors.alert}
-menu-0-1-exec = shutdown now
-
-label-open = 
-label-open-foreground = ${colors.alert}
-
-label-close = 
-label-close-foreground = ${colors.foreground-alt}
-
-label-separator = " "
+click-left = shutdown now
+click-middle = reboot
 
 
 [module/cpu]
