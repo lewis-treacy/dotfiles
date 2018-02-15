@@ -90,7 +90,7 @@ content = 
 content-foreground = ${colors.alert}
 
 click-left = shutdown now
-click-middle = reboot
+click-right = reboot
 
 
 [module/cpu]
