@@ -96,8 +96,7 @@ click-right = reboot
 [module/cpu]
 type = internal/cpu
 interval = 2
-;format-prefix = " "
-format-prefix = " "
+format-prefix = " "
 label = %percentage%%
 
 
