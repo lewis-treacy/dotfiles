@@ -85,12 +85,6 @@ highlight NonText ctermfg=darkgrey
 highlight MatchParen cterm=none ctermbg=grey ctermfg=darkblue
 
 
-" ==================================== Files, Backups and Undo =====================================
-set nobackup
-set nowb
-set noswapfile
-
-
 " ====================================== Text, Tab and Indent ======================================
 set autoindent
 set smartindent
