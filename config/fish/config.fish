@@ -4,6 +4,12 @@ function su
   /bin/su --shell=/usr/bin/fish $argv
 end
 
+function yas -e fish_command_not_found
+  if string match -irq "y[a]+s" $argv
+    yaourt -Syua
+  end
+end
+
 setxkbmap -option caps:escape
 
 set -U SXHKD_SHELL /bin/bash
@@ -26,4 +32,4 @@ set fish_color_redirection teal
 set fish_color_status red
 set fish_color_user brgreen
 
-source ~/.config/fish/aliases.fish
+source ~/.config/fish/abbr.fish
