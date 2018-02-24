@@ -196,7 +196,7 @@ autocmd BufWritePre *.vim,*.txt,*.js,*.py,*.sh,*.tex,*rc :call CleanExtraSpaces(
 
 autocmd FileType vim set colorcolumn=100
 autocmd FileType tex,markdown set colorcolumn=100
-autocmd BufEnter *.c,*.py set tabstop=4 shiftwidth=4
+autocmd BufEnter *.py set tabstop=4 shiftwidth=4
 autocmd BufEnter *.go set tabstop=4 shiftwidth=4 noexpandtab
 
 autocmd BufWritePost *.tex silent !pdflatex %
