@@ -9,6 +9,6 @@ abbr -a vi nvim
 abbr -a wim nvim
 abbr -a vim nvim
 
-abbr -a sysinfo "neofetch; hex"
-
 abbr -a msf "msfconsole -x \"db_connect lewis@msf\""
+
+alias sysinfo "neofetch; hex"
