@@ -7,3 +7,5 @@
   default = simple
 [init]
   templatedir = ~/.gittemplate
+[credential]
+  helper = cache
