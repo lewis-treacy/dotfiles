@@ -35,9 +35,6 @@ let mapleader = ","
 " ========================================= User interface =========================================
 set so=7
 
-"set wildmenu
-"set wildignore=*.o,*~,*.pyc,*/.git/*,*/.hg/*,*/.svn/*,*/DS_Store
-
 set number relativenumber
 set mouse=a
 set showcmd
@@ -51,9 +48,7 @@ set listchars=eol:¬,trail:~,space:·,tab:>-
 set ruler
 set colorcolumn=80
 set cmdheight=2
-"set hid
 set backspace=eol,start,indent
-"set whichwrap+=<,>,h,l
 set ignorecase
 set smartcase
 set hlsearch
@@ -92,8 +87,6 @@ set expandtab
 set smarttab
 set shiftwidth=2
 set tabstop=2
-"set lbr
-"set tw=100
 
 set splitright
 set splitbelow
@@ -109,15 +102,15 @@ vnoremap <silent> # :<C-u>call VisualSelection('', '')<cr>/<C-R>=@/<cr><cr>
 map j gj
 map k gk
 
-map <space> /
+map <space>   /
 map <c-space> ?
 
 map <silent> <leader><cr> :noh<cr>
 
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map <C-h>  <C-w>h
+map <C-j>  <C-w>j
+map <C-k>  <C-w>k
+map <C-l>  <C-w>l
 map <C-M>h <C-w>H
 map <C-M>j <C-w>J
 map <C-M>k <C-w>K
@@ -125,13 +118,13 @@ map <C-M>l <C-w>L
 
 map <leader>bd :Bclose<cr>:tabclose<cr>gT
 map <leader>ba :bufdo bd<cr>
-map <leader>l :bnext<cr>
-map <leader>h :bprevious<cr>
+map <leader>l  :bnext<cr>
+map <leader>h  :bprevious<cr>
 
-map <leader>nt :tabnew<cr>
-map <leader>ot :taonly<cr>
-map <leader>ct :tabclose<cr>
-map <leader>mt :tabmove<cr>
+map <leader>nt        :tabnew<cr>
+map <leader>ot        :tabonly<cr>
+map <leader>ct        :tabclose<cr>
+map <leader>mt        :tabmove<cr>
 map <leader>t<leader> :tabnext<cr>
 
 let g:lasttab = 1
@@ -149,15 +142,17 @@ endtry
 
 autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 
+command F FZF
+
 
 " ========================================= Disable Arrows =========================================
-map <up> <nop>
-map <down> <nop>
-map <left> <nop>
-map <right> <nop>
-imap <up> <nop>
-imap <down> <nop>
-imap <left> <nop>
+map  <up>    <nop>
+map  <down>  <nop>
+map  <left>  <nop>
+map  <right> <nop>
+imap <up>    <nop>
+imap <down>  <nop>
+imap <left>  <nop>
 imap <right> <nop>
 
 
