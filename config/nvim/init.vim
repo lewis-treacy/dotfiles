@@ -1,24 +1,24 @@
 " ============================================ Plugins =============================================
 call plug#begin('~/.local/share/nvim/plugged')
-  Plug 'tpope/vim-fugitive'
-  Plug 'tpope/vim-surround'
-  Plug 'tpope/vim-repeat'
-  Plug 'tpope/vim-commentary'
-  Plug 'tpope/vim-sensible'
   Plug 'airblade/vim-gitgutter'
+  Plug 'easymotion/vim-easymotion'
+  Plug 'honza/vim-snippets'
+  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/vim-easy-align'
+  Plug 'majutsushi/tagbar'
+  Plug 'sbdchd/neoformat'
+  Plug 'scrooloose/nerdtree'
+  Plug 'scrooloose/syntastic'
+  Plug 'sirver/ultisnips'
+  Plug 'tpope/vim-commentary'
+  Plug 'tpope/vim-fugitive'
+  Plug 'tpope/vim-repeat'
+  Plug 'tpope/vim-sensible'
+  Plug 'tpope/vim-surround'
+  Plug 'valloric/youcompleteme'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'scrooloose/syntastic'
-  Plug 'scrooloose/nerdtree'
   Plug 'xuyuanp/nerdtree-git-plugin'
-  Plug 'majutsushi/tagbar'
-  Plug 'easymotion/vim-easymotion'
-  Plug 'valloric/youcompleteme'
-  Plug 'sirver/ultisnips'
-  Plug 'honza/vim-snippets'
-  Plug 'junegunn/vim-easy-align'
-  Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
-  Plug 'sbdchd/neoformat'
 call plug#end()
 
 
