@@ -7,18 +7,14 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'junegunn/vim-easy-align'
   Plug 'majutsushi/tagbar'
   Plug 'sbdchd/neoformat'
-  Plug 'scrooloose/nerdtree'
   Plug 'scrooloose/syntastic'
   Plug 'sirver/ultisnips'
   Plug 'tpope/vim-commentary'
-  Plug 'tpope/vim-fugitive'
   Plug 'tpope/vim-repeat'
   Plug 'tpope/vim-sensible'
   Plug 'tpope/vim-surround'
-  Plug 'valloric/youcompleteme'
   Plug 'vim-airline/vim-airline'
   Plug 'vim-airline/vim-airline-themes'
-  Plug 'xuyuanp/nerdtree-git-plugin'
 call plug#end()
 
 
@@ -173,7 +169,6 @@ nmap <leader>ev :vsp $MYVIMRC<cr>
 nmap <leader>sv :so $MYVIMRC<cr>
 nmap <leader>tn :call ToggleNumbers()<cr>
 nmap <leader>tl :call ToggleList()<cr>
-nmap <leader>tb :NERDTreeToggle<cr>
 nmap <leader>tt :TagbarToggle<cr>
 
 map <leader>ss :setlocal spell!<cr>
@@ -246,6 +241,8 @@ let g:ctrlp_show_hidden = 1
 
 
 " ============================================== Tagbar ============================================
+nmap <F8> :TagbarToggle<cr>
+
 let g:tagbar_type_go = {
   \ 'ctagstype' : 'go',
   \ 'kinds'     : [
