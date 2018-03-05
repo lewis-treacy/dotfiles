@@ -1,8 +1,9 @@
 map . navigate
 map , navigate previous
+map c set recolor
+
 set selection-clipboard clipboard
 set highlight-color grey
 set highlight-active-color grey
-
 set recolor-darkcolor "#BDBDBD"
 set recolor-lightcolor "#212121"
