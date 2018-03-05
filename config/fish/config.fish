@@ -32,4 +32,4 @@ set fish_color_redirection teal
 set fish_color_status red
 set fish_color_user brgreen
 
-source ~/.config/fish/abbr.fish
+source ~/.config/fish/aliases.fish
