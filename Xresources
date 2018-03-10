@@ -68,5 +68,5 @@
 *.highlightTextColor: #FFFFFF
 
 ! cursor theme
-Xcursor.theme: Breeze_Obsidian
+Xcursor.theme: Breeze-Obsidian
 Xcursor.size: 8
