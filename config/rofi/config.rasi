@@ -47,10 +47,19 @@
 #element.alternate.active {
     color: @active;
 }
+
+#prompt {
+    text-color: @orange;
+}
+#textbox-prompt-colon {
+    str:        ":";
+    margin:     0px 2px 0px -2px ;
+}
 #inputbar {
-    padding: 5px 5px 0px 5px;
+    children: [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    padding: 5px 0px 0px 5px;
 }
 
 #message {
-    padding: 5px ;
+    padding: 5px;
 }
