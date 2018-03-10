@@ -10,8 +10,6 @@ function yas -e fish_command_not_found
   end
 end
 
-setxkbmap -option caps:escape
-
 set -U SXHKD_SHELL /bin/bash
 set -gx GOPATH $HOME/.go
 set -gx EDITOR vim
