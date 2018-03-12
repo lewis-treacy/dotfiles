@@ -1,19 +1,19 @@
 * {
-    dark-grey:   #212121;
-    white:       #ECEFF1;
-    urgent:      #E53935;
-    active:      #039BE5;
-    orange:      #FB8C00;
+    dark-grey: #212121;
+    white:     #ECEFF1;
+    urgent:    #E53935;
+    active:    #039BE5;
+    orange:    #FB8C00;
 
     background-color: @dark-grey;
-    color: @white;
-    font: "Hack 14px";
+    color:            @white;
+    font:             "Hack 14px";
 }
 
 #window {
-    padding: 2px;
+    padding:          2px;
     background-color: @orange;
-    color: @test;
+    color:            @test;
 }
 
 #listview {
@@ -30,15 +30,15 @@
     color: @active;
 }
 #element.selected.normal {
-    color: @dark-grey;
+    color:            @dark-grey;
     background-color: @white;
 }
 #element.selected.urgent {
-    color: @urgent;
+    color:            @urgent;
     background-color: @white;
 }
 #element.selected.active {
-    color: @active;
+    color:            @active;
     background-color: @active;
 }
 #element.alternate.urgent {
@@ -52,12 +52,13 @@
     text-color: @orange;
 }
 #textbox-prompt-colon {
-    str:        ":";
-    margin:     0px 2px 0px -2px ;
+    expand: false;
+    str:    ":";
+    margin: 0px 2px 0px -2px ;
 }
 #inputbar {
     children: [ prompt,textbox-prompt-colon,entry,case-indicator ];
-    padding: 5px 0px 0px 5px;
+    padding:  5px 0px 0px 5px;
 }
 
 #message {
