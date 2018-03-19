@@ -9,6 +9,7 @@ monitor = ${env:MONITOR:DP-0}
 modules-left = bspwm
 modules-right = net sep mem sep cpu sep temp sep power
 net-interface = wlp4s0
+temp-path = /sys/devices/platform/coretemp.0/hwmon/hwmon2/temp1_input
 
 
 ; right monitor bar

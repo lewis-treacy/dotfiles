@@ -109,7 +109,8 @@ label = %percentage_used%%
 
 [module/temp]
 type = internal/temperature
-thermal-zone = 0
+; temp-path needs to be defined in the bar
+hwmon-path = ${root.temp-path}
 warn-temperature = 60
 
 format = <label>
