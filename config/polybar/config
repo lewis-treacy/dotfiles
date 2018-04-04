@@ -77,7 +77,7 @@ type = internal/date
 interval = 1
 
 date = %Y-%m-%d
-time = T%H:%M:%SZ
+time = T%H:%M:%S%z
 date-alt = %a %d %b
 time-alt = " %H:%M:%S"
 label = %date%%time%
