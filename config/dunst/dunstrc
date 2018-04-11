@@ -34,7 +34,7 @@
     history_length = 20
 
     dmenu = /usr/bin/dmenu -p dunst:
-    browser = /usr/bin/firefox-nightly -new-tab
+    browser = /usr/bin/firefox-beta -new-tab
     always_run_script = true
     title = Dunst
     class = Dunst
@@ -66,8 +66,6 @@
     frame_color = "#E53935"
     timeout = 0
 
-
-
-
-
-
+[all]
+    appname = "*"
+    script = ~/.bin/blink
