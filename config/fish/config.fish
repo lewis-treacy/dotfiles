@@ -15,7 +15,7 @@ set -gx GOPATH $HOME/.go
 set -gx EDITOR vim
 set -gx VISUAL vim
 set -gx LANG en_GB.UTF-8
-set -gx PATH /usr/local/bin $HOME/.go/bin $HOME/.bin $HOME/.bin/pintos $PATH
+set -gx PATH /usr/local/bin $HOME/.go/bin $HOME/.bin $PATH
 set -gx SHELL /usr/bin/fish
 
 set fish_color_autosuggestion brgrey
