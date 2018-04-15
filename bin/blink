@@ -1,0 +1,55 @@
+#!/bin/bash
+
+case "$(hostname)" in
+  "wheatley")
+    led=tpacpi::power
+    ;;
+  *)
+    exit 0
+    ;;
+esac
+
+trap "echo 1 > /sys/class/leds/$led/brightness; exit" SIGINT SIGQUIT SIGKILL
+freq=1
+blinks=0
+
+if [ $# -eq 5 ]; then
+  urgency=$5
+  case "$urgency" in
+    "LOW")
+      freq=1
+      blinks=5
+      ;;
+    "NORMAL")
+      freq=0.5
+      blinks=5
+      ;;
+    "CRITICAL")
+      freq=0.5
+      blinks=10
+      ;;
+  esac
+else
+  if [ $# -ge 1 ]; then
+    freq=$1
+  fi
+  if [ $# -ge 2 ]; then
+    blinks=$2
+  fi
+  if [ $# -ge 3 ]; then
+    echo "Invalid argument $3"
+    exit 64
+  fi
+fi
+
+count=0
+while [ True ]; do
+  if [ $blinks -ne 0 ] && [ $count -ge $blinks ]; then
+    exit 0
+  fi
+  echo 0 > /sys/class/leds/tpacpi::power/brightness
+  sleep $freq
+  echo 1 > /sys/class/leds/tpacpi::power/brightness
+  sleep $freq
+  ((count++))
+done
