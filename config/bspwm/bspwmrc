@@ -35,6 +35,7 @@ bspc rule -a Mullvad state=floating
 bspc rule -a Lightscreen state=floating
 bspc rule -a Wicd-client.py state=floating
 bspc rule -a Alacritty state=floating
+bspc rule -a "Firefox Beta" state=tiled
 if [[ $(hostname) == "GLaDOS" ]]; then
   # Desktop
   bspc rule -a Spotify desktop=^6
