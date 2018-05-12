@@ -7,9 +7,9 @@ super + Return
 super + space
   rofi -show run -font "hack 12" -regex -width 640
 
-# make sxhkd reload its configuration files:
+# make sxhkd and bspwm reload their configuration files:
 super + Escape
-  pkill -USR1 -x sxhkd; bash ~/.config/polybar/launch.sh
+  pkill -USR1 -x sxhkd; bash ~/.config/bspwm/bspwmrc
 
 
 ################################ bspwm hotkeys #################################
