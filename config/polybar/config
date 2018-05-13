@@ -74,7 +74,7 @@ label-empty-padding = 1
 
 [module/date]
 type = internal/date
-interval = 1
+interval = 0.2
 
 date = %Y-%m-%d
 time = T%H:%M:%S%z
@@ -95,14 +95,14 @@ click-right = reboot
 
 [module/cpu]
 type = internal/cpu
-interval = 2
+interval = 0.5
 format-prefix = " "
 label = %percentage%%
 
 
 [module/mem]
 type = internal/memory
-interval = 2
+interval = 1
 format-prefix = " "
 label = %percentage_used%%
 
@@ -112,6 +112,7 @@ type = internal/temperature
 ; temp-zone needs to be defined in the bar
 thermal-zone = ${root.temp-zone}
 warn-temperature = 60
+interval = 0.5
 
 format = <label>
 format-warn = <label-warn>
