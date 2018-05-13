@@ -14,7 +14,7 @@ bspc config click_to_focus       true
 # MONITORS
 if [[ $(hostname) == "lewisDesktop" ]]; then
   # Desktop
-  xrandr --output DP-0 --auto --pos 0x220 --output HDMI-0 --auto --pos 3440x0
+  xrandr --output DP-0 --auto --pos 0x240 --output HDMI-0 --auto --pos 3440x0
   bspc monitor DP-0 -d 1 2 3 4 5
   bspc monitor HDMI-0 -d 6 7 8 9 10
 elif [[ $(hostname) == "lewisLaptop" ]]; then
