@@ -1,0 +1,15 @@
+#!/bin/bash
+
+pkill -USR1 -x sxhkd
+
+for rule in $(bspc rule -l); do
+  bspc rule -r head
+done
+
+source ~/.config/bspwm/bspwmrc
+
+for node in $(bspc query -N -n .tiled); do
+  echo "NODE $node" 
+  bspc node $node -t floating
+  bspc node $node -t tiled
+done
