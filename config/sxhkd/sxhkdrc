@@ -11,6 +11,9 @@ super + space
 super + Escape
   pkill -USR1 -x sxhkd; bash ~/.config/bspwm/bspwmrc
 
+super + l
+  lock
+
 
 ################################ bspwm hotkeys #################################
 # quit bspwm normally
