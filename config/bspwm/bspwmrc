@@ -14,9 +14,12 @@ bspc config click_to_focus       true
 # MONITORS
 if [[ $(hostname) == "lewisDesktop" ]]; then
   # Desktop
-  xrandr --output DP-0 --auto --pos 0x240 --output HDMI-0 --auto --pos 3440x0
-  bspc monitor DP-0 -d 1 2 3 4 5
-  bspc monitor HDMI-0 -d 6 7 8 9 10
+  xrandr --output DP-0 --auto --pos 0x1440 --primary
+  xrandr --output HDMI-0 --auto --pos 440x0 --rotate normal
+  xrandr --output DVI-I-1 --auto --pos 3440x1200 --rotate right
+  bspc monitor DP-0 -d 1 2 3
+  bspc monitor HDMI-0 -d 4 5 6
+  bspc monitor DVI-I-1 -d 7 8 9 10
 elif [[ $(hostname) == "lewisLaptop" ]]; then
   # Laptop
   bspc monitor -d 1 2 3 4 5 6 7 8 9 10
@@ -35,7 +38,6 @@ bspc rule -a Mullvad state=floating
 bspc rule -a Lightscreen state=floating
 bspc rule -a Wicd-client.py state=floating
 bspc rule -a Alacritty state=floating
-bspc rule -a "Firefox Beta" state=tiled
 if [[ $(hostname) == "GLaDOS" ]]; then
   # Desktop
   bspc rule -a Spotify desktop=^6

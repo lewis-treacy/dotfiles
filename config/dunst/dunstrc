@@ -1,6 +1,6 @@
 [global]
-    monitor = 0
-    geometry = "0x10-1+1"
+    monitor = 2
+    geometry = "810x20+875-1"
     indicate_hidden = yes
     shrink = no
     transparency = 0
@@ -18,23 +18,23 @@
     line_height = 0
     markup = full
     format = "<b>%s</b>\n%b"
-    alignment = left
+    alignment = center
     show_age_threshold = 60
     word_wrap = yes
     ignore_newline = no
     stack_duplicates = true
     hide_duplicate_count = false
-    show_indicators = yes
+    show_indicators = no
 
     icon_position = off
     max_icon_size = 32
-    icon_folders = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
 
     sticky_history = yes
     history_length = 20
 
     dmenu = /usr/bin/dmenu -p dunst:
-    browser = /usr/bin/firefox-beta -new-tab
+    browser = /usr/bin/firefox-beta --new-tab
     always_run_script = true
     title = Dunst
     class = Dunst
@@ -69,3 +69,8 @@
 [all]
     appname = "*"
     script = ~/.bin/blink
+
+[qbittorrent]
+    appname = "qBittorrent"
+    format = ""
+
