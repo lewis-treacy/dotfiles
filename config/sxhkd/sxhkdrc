@@ -119,11 +119,3 @@ XF86AudioMute
 # spotify play, next and previous for laptop
 ctrl + {XF86AudioMute,XF86AudioRaiseVolume,XF86AudioLowerVolume}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Next,Previous}
-
-# on mouse button 9 press F5
-button9
-  xte "keydown F5" "keyup F5"
-
-################################## backlight ###################################
-XF86MonBrightness{Up,Down}
-  brightnessctl s {+5%,5%-}

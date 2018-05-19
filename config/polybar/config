@@ -165,3 +165,6 @@ format-full-prefix-foreground = ${colors.green}
 [global/wm]
 margin-top = 0
 margin-bottom = 0
+
+
+; <computer specific bars>
