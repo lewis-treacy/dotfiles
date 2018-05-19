@@ -8,6 +8,7 @@ if [[ $(hostname) == "lewisDesktop" ]]; then
   echo "Launching desktop bars..."
   polybar bar1 -c $HOME/.config/polybar/config_desktop &
   polybar bar2 -c $HOME/.config/polybar/config_desktop &
+  polybar bar3 -c $HOME/.config/polybar/config_desktop &
 elif [[ $(hostname) == "lewisLaptop" ]]; then
   echo "Launching laptop bars..."
   polybar bar3 -c $HOME/.config/polybar/config_laptop &
