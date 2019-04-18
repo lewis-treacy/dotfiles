@@ -146,4 +146,29 @@ margin-top = 0
 margin-bottom = 0
 
 
-; <computer specific bars>
+; main monitor bar
+[bar/primary]
+inherit = bar/main
+monitor = ${env:MONITOR:DP-0}
+modules-left = bspwm
+modules-right = net sep mem sep cpu sep temp sep power
+tray-position = none
+net-interface = enp0s31f6
+temp-zone = 2
+
+
+; top monitor bar
+[bar/top]
+inherit = bar/main
+monitor = ${env:MONITOR:HDMI-0}
+modules-left = bspwm
+tray-position = right
+
+
+; right monitor bar
+[bar/right]
+inherit = bar/main
+monitor = ${env:MONITOR:DVI-I-1}
+modules-left = bspwm
+modules-right = date
+tray-position = none

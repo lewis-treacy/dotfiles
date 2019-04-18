@@ -4,6 +4,9 @@ echo "Killing current bars..."
 killall -q polybar
 while pgrep -x polybar >/dev/null; do sleep 1; done
 
-# <launch computer specific bars>
+echo "Launching desktop bars..."
+polybar primary -c $HOME/.config/polybar/config &
+polybar top -c $HOME/.config/polybar/config &
+polybar right -c $HOME/.config/polybar/config &
 
 echo "Bars launched..."
