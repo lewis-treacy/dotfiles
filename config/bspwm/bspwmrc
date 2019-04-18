@@ -38,6 +38,7 @@ xrdb ~/.Xresources
 setxkbmap -layout gb
 setxkbmap -option caps:escape
 xsetroot -cursor_name left_ptr
+systemctl --user import-environment DISPLAY
 
 xset -dpms
 xset s off
