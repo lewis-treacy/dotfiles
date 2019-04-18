@@ -1,7 +1,7 @@
 [user]
   name = Lewis Treacy
 [core]
-  editor = vim
+  editor = nvim
 [push]
   default = simple
 [init]
