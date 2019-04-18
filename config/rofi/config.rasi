@@ -1,9 +1,11 @@
 * {
-    dark-grey: #212121;
-    white:     #ECEFF1;
-    urgent:    #E53935;
-    active:    #039BE5;
-    orange:    #FB8C00;
+    dark-grey:    #212121;
+    white:        #ECEFF1;
+    urgent:       #E53935;
+    active:       #039BE5;
+    orange:       #FB8C00;
+    purple:       #6441A4;
+    light-purple: #7E57C2;
 
     background-color: @dark-grey;
     color:            @white;
