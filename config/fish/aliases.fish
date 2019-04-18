@@ -1,6 +1,6 @@
 alias sysinfo "neofetch; hex"
 alias ls "exa -lh"
-alias la "ls -lh -A"
+alias la "ls -a"
 alias mkdir "mkdir -p"
 alias msf "msfconsole -x \"db_connect lewis@msf\""
 
