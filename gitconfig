@@ -12,3 +12,5 @@
   insteadOf = https://gitlab.doc.ic.ac.uk/ljt16
 [commit]
   gpgsign = true
+[gpg]
+  program = gpg2
