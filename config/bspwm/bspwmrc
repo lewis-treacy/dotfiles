@@ -45,4 +45,4 @@ xset -dpms
 xset s off
 numlockx on
 
-wmname LG3D
+wmname "LG3D"
