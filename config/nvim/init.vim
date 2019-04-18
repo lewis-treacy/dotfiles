@@ -1,6 +1,7 @@
 " ============================================ Plugins =============================================
 call plug#begin('~/.local/share/nvim/plugged')
   Plug 'airblade/vim-gitgutter'
+  Plug 'chrisbra/csv.vim'
   Plug 'easymotion/vim-easymotion'
   Plug 'honza/vim-snippets'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
