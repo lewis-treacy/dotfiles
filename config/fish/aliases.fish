@@ -2,8 +2,6 @@ alias sysinfo "neofetch; hex"
 alias ls "exa -lh"
 alias la "ls -lh -A"
 alias mkdir "mkdir -p"
-alias ya "yaourt"
-alias yas "yaourt -Syua"
 alias msf "msfconsole -x \"db_connect lewis@msf\""
 
 alias v nvim
