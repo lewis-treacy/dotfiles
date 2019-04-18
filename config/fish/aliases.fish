@@ -1,5 +1,5 @@
 alias sysinfo "neofetch; hex"
-alias ls "ls -lh"
+alias ls "exa -lh"
 alias la "ls -lh -A"
 alias mkdir "mkdir -p"
 alias ya "yaourt"
