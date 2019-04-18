@@ -7,10 +7,12 @@ end
 set -U SXHKD_SHELL /bin/bash
 set -gx GOPATH $HOME/.go
 set -gx EDITOR nvim
+
 set -gx VISUAL gvim
 set -gx LANG en_GB.UTF-8
 set -gx PATH /usr/local/bin $HOME/.go/bin $HOME/.bin $PATH
 set -gx SHELL /usr/bin/fish
+set -gx GPG_TTY (tty)
 
 set fish_color_autosuggestion brgrey
 set fish_color_command green
