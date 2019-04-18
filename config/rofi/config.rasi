@@ -50,6 +50,9 @@
     color: @active;
 }
 
+#entry {
+    text-color: @orange;
+}
 #inputbar {
     children: [ entry, case-indicator ];
     padding:  5px 0px 0px 5px;
