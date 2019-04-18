@@ -32,8 +32,8 @@ for rule in $(bspc rule -l); do
 done
 bspc rule -a GLava             state=floating
 bspc rule -a jetbrains-toolbox state=floating
-bspc rule -a Alacritty         state=floating
-bspc rule -a Nautilus          state=floating
+bspc rule -a Alacritty         state=floating rectangle=1024x576+1208+432
+bspc rule -a Nautilus          state=floating rectangle=1024x576+1208+432
 
 bash $HOME/.config/polybar/launch.sh
 
