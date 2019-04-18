@@ -14,8 +14,7 @@
 
 #window {
     padding:          2px;
-    background-color: @orange;
-    color:            @test;
+    background-color: @purple;
 }
 
 #listview {
