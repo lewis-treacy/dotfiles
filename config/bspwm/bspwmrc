@@ -34,6 +34,7 @@ bspc rule -a Nautilus          state=floating
 
 bash $HOME/.config/polybar/launch.sh
 
+xrdb ~/.Xresources
 setxkbmap -layout gb
 setxkbmap -option caps:escape
 xsetroot -cursor_name left_ptr
