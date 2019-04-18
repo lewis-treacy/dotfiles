@@ -117,8 +117,8 @@ interval = 0.5
 format = <label>
 format-warn = <label-warn>
 
-label = %temperature%
-label-warn = %temperature%
+label = %temperature-c%
+label-warn = %temperature-c%
 label-warn-foreground = ${colors.alert}
 
 
