@@ -30,3 +30,4 @@ set fish_color_time brblack
 set fish_color_host blue
 
 source ~/.config/fish/aliases.fish
+pyenv init - | source
