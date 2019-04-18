@@ -32,8 +32,11 @@ super + ctrl + {x,y,z}
   bspc node -g {locked,sticky,private}
 
 # hide current node, or restore a queried hidden node
-super + {_,shift} + minus
-  bspc node {_,$(bspc query -N -d -n .hidden | head -n 1)} -g hidden
+super + minus
+  bspc node -g hidden
+
+super + shift + minus
+  bspc node (bspc query -N -d -n .hidden | head -n 1) -g hidden
 
 
 ################################## focus/swap ##################################
