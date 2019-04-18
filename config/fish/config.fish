@@ -4,12 +4,6 @@ function su
   /bin/su --shell=/usr/bin/fish $argv
 end
 
-function yas -e fish_command_not_found
-  if string match -irq "y[a]+s" $argv
-    yaourt -Syua
-  end
-end
-
 set -U SXHKD_SHELL /bin/bash
 set -gx GOPATH $HOME/.go
 set -gx EDITOR vim
