@@ -26,4 +26,7 @@ set fish_color_redirection teal
 set fish_color_status red
 set fish_color_user brgreen
 
+set fish_color_time brblack
+set fish_color_host blue
+
 source ~/.config/fish/aliases.fish
