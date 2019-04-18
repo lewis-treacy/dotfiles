@@ -9,7 +9,7 @@
 
     background-color: @dark-grey;
     color:            @white;
-    font:             "Hack 14px";
+    font:             "Source Code Pro:style=Bold 16px";
 }
 
 #window {
