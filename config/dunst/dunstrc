@@ -65,10 +65,6 @@
     frame_color = "#E53935"
     timeout = 0
 
-[all]
-    appname = "*"
-    script = ~/.bin/blink
-
 [qbittorrent]
     appname = "qBittorrent"
     format = ""
