@@ -43,5 +43,6 @@ nm-applet
 
 xset -dpms
 xset s off
+numlockx on
 
 wmname LG3D
