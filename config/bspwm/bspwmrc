@@ -8,11 +8,8 @@ bspc config borderless_monocle   false
 bspc config gapless_monocle      true
 bspc config click_to_focus       any
 
-# MONITORS
-# <xrandr settings for monitors>
-
 # DESKTOPS
-# <bspc monitor settings>
+bspc monitor -d 1 2 3 4 5 6 7 8 9 10
 
 feh --bg-center ~/.config/wallpaper
 
@@ -28,9 +25,8 @@ for rule in $(bspc rule -l); do
 done
 bspc rule -a GLava             state=floating
 bspc rule -a jetbrains-toolbox state=floating
-bspc rule -a Alacritty         state=floating
-bspc rule -a Nautilus          state=floating
-# <computer specific rules>
+bspc rule -a Alacritty         state=floating rectangle=1024x576+448+252
+bspc rule -a Nautilus          state=floating rectangle=1024x576+448+252
 
 bash $HOME/.config/polybar/launch.sh
 
