@@ -146,4 +146,11 @@ margin-top = 0
 margin-bottom = 0
 
 
-; <computer specific bars>
+; laptop bar
+[bar/bar]
+inherit = bar/main
+monitor = ${env:MONITOR:eDP-1}
+modules-left = bspwm
+modules-right = net sep temp sep mem sep cpu sep charging bat1 subsep bat0 sep date sep power
+net-interface = wlp4s0
+temp-zone = 0
