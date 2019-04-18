@@ -111,9 +111,6 @@ super + {_,shift +} semicolon
 {XF86AudioPlay,XF86AudioStop,XF86AudioNext,XF86AudioPrev}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Stop,Next,Previous}
 
-# spotify play, next and previous for laptop
-ctrl + {XF86AudioMute,XF86AudioRaiseVolume,XF86AudioLowerVolume}
-  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Next,Previous}
 
 ################################## MX Master ###################################
 # Volume on horizontal scroll wheel
