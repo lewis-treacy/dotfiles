@@ -141,27 +141,6 @@ label-disconnected-foreground = ${colors.alert}
 format-disconnected = <label-disconnected>
 
 
-[module/bat]
-type = internal/battery
-full-at = 99
-
-battery = BAT0
-adapter = AC
-poll-interval = 5
-
-format-charging = <label-charging>
-format-charging-prefix = " "
-format-charging-prefix-foreground = ${colors.green}
-label-charging = %percentage%%
-
-format-discharging = <label-discharging>
-format-discharging-prefix = " "
-label-discharging = %percentage%%
-
-format-full-prefix = " "
-format-full-prefix-foreground = ${colors.green}
-
-
 [global/wm]
 margin-top = 0
 margin-bottom = 0
