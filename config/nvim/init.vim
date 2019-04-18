@@ -3,6 +3,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'airblade/vim-gitgutter'
   Plug 'chrisbra/csv.vim'
   Plug 'easymotion/vim-easymotion'
+  Plug 'editorconfig/editorconfig-vim'
   Plug 'honza/vim-snippets'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
   Plug 'junegunn/vim-easy-align'
