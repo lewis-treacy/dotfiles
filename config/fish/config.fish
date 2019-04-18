@@ -10,7 +10,7 @@ set -gx EDITOR nvim
 
 set -gx VISUAL gvim
 set -gx LANG en_GB.UTF-8
-set -gx PATH /usr/local/bin $HOME/.go/bin $HOME/.bin $PATH
+set -gx PATH /usr/local/bin $HOME/.go/bin $HOME/.bin $HOME/.pyenv/versions $PATH
 set -gx SHELL /usr/bin/fish
 set -gx GPG_TTY (tty)
 
