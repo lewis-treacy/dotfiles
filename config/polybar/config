@@ -97,7 +97,7 @@ click-right = reboot
 type = internal/cpu
 interval = 0.5
 format-prefix = " "
-label = %percentage%%
+label = %percentage-sum%%
 
 
 [module/mem]
