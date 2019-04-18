@@ -10,5 +10,5 @@
   insteadOf = https://github.com/lewis-treacy
 [url "git@gitlab.doc.ic.ac.uk:ljt16"]
   insteadOf = https://gitlab.doc.ic.ac.uk/ljt16
-[credential]
-  helper = cache
+[commit]
+  gpgsign = true
