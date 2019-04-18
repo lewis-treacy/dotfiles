@@ -48,6 +48,10 @@ content-background = ${colors.background}
 content-foreground = ${colors.foreground-dark}
 content-padding = 1
 
+[module/subsep]
+inherit = module/sep
+content = ":"
+
 
 [module/bspwm]
 type = internal/bspwm
@@ -139,6 +143,46 @@ format-disconnected-foreground = ${colors.background}
 label-disconnected = not connected
 label-disconnected-foreground = ${colors.alert}
 format-disconnected = <label-disconnected>
+
+
+[module/charging]
+type = internal/battery
+
+adapter = AC
+poll-interval = 1
+
+format-charging = <label-charging>
+format-charging-foreground = ${colors.green}
+label-charging = " "
+
+format-discharging = <label-discharging>
+label-discharging = " "
+
+format-full = <label-full>
+format-full-foreground = ${colors.green}
+label-full = " "
+
+
+[module/bat]
+type = internal/battery
+
+full-at = 98
+adapter = AC
+poll-interval = 1
+
+[module/bat0]
+inherit = module/bat
+battery = BAT0
+label-charging = "%percentage%%"
+label-discharging = "%percentage%%"
+label-full = "FULL"
+
+[module/bat1]
+inherit = module/bat
+battery = BAT1
+label-charging = "%percentage%%"
+label-discharging = "%percentage%%"
+label-full = "FULL"
 
 
 [global/wm]
