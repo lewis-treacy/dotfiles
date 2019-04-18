@@ -50,16 +50,8 @@
     color: @active;
 }
 
-#prompt {
-    text-color: @orange;
-}
-#textbox-prompt-colon {
-    expand: false;
-    str:    ":";
-    margin: 0px 2px 0px -2px ;
-}
 #inputbar {
-    children: [ prompt,textbox-prompt-colon,entry,case-indicator ];
+    children: [ entry, case-indicator ];
     padding:  5px 0px 0px 5px;
 }
 
