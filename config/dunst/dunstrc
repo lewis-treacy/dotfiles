@@ -1,6 +1,6 @@
 [global]
-    monitor = 2
-    geometry = "810x20+875-1"
+    # monitor =
+    # geometry =
     indicate_hidden = yes
     shrink = no
     transparency = 0
