@@ -41,7 +41,6 @@ xsetroot -cursor_name left_ptr
 systemctl --user import-environment DISPLAY
 nm-applet
 
-xset -dpms
 xset s off
 numlockx on
 
