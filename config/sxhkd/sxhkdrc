@@ -119,3 +119,12 @@ XF86AudioMute
 # spotify play, next and previous for laptop
 ctrl + {XF86AudioMute,XF86AudioRaiseVolume,XF86AudioLowerVolume}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Next,Previous}
+
+################################## MX Master ###################################
+# Volume on horizontal scroll wheel
+{button6,button7}
+  pactl set-sink-volume @DEFAULT_SINK@ {+,-}5%
+
+# press F5 on side button
+button9
+  xte "keydown F5" "keyup F5"
