@@ -6,6 +6,7 @@ call plug#begin('~/.local/share/nvim/plugged')
   Plug 'editorconfig/editorconfig-vim'
   Plug 'honza/vim-snippets'
   Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+  Plug 'junegunn/fzf.vim'
   Plug 'junegunn/vim-easy-align'
   Plug 'majutsushi/tagbar'
   Plug 'sbdchd/neoformat'
@@ -124,6 +125,8 @@ map <leader>ot        :tabonly<cr>
 map <leader>ct        :tabclose<cr>
 map <leader>mt        :tabmove<cr>
 map <leader>t<leader> :tabnext<cr>
+
+nnoremap <C-g> :Rg<Cr>
 
 let g:lasttab = 1
 nmap <leader>lt :exe "tabn ".g:lasttab<cr>
@@ -282,3 +285,11 @@ let g:UltiSnipsJumpBackwardTrigger="<c-h>"
 " ============================================ EasyAlign ===========================================
 xmap ga <Plug>(EasyAlign)
 nmap ga <Plug>(EasyAlign)
+
+" =============================================== FZF ==============================================
+let g:rg_command = '
+  \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always"
+  \ -g "*.{js,json,php,md,styl,jade,html,config,py,cpp,c,go,hs,rb,conf}"
+  \ -g "!{.git,node_modules,vendor}/*" '
+
+command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)
