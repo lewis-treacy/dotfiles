@@ -8,4 +8,3 @@ alias v nvim
 alias vi nvim
 alias wim nvim
 alias vim nvim
-alias fvim "fzf | xargs nvim"
