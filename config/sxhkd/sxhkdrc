@@ -122,7 +122,7 @@ ctrl + {XF86AudioMute,XF86AudioRaiseVolume,XF86AudioLowerVolume}
 
 ################################## MX Master ###################################
 # Volume on horizontal scroll wheel
-{button6,button7}
+ctrl + {button6,button7}
   pactl set-sink-volume @DEFAULT_SINK@ {+,-}5%
 
 # press F5 on side button
