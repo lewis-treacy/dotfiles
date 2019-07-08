@@ -7,6 +7,7 @@ end
 set -U SXHKD_SHELL /bin/bash
 set -gx GOPATH $HOME/.go
 set -gx EDITOR nvim
+set -gx DIFFPROG "nvim -d"
 
 set -gx VISUAL gvim
 set -gx LANG en_GB.UTF-8
