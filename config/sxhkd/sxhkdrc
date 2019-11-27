@@ -21,7 +21,7 @@ super + alt + Escape
 super + {_,shift} + w
   bspc node -{c,k}
 
-super + l
+super + ctrl + l
   systemctl hibernate
 
 
