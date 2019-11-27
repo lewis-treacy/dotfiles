@@ -21,6 +21,9 @@ super + alt + Escape
 super + {_,shift} + w
   bspc node -{c,k}
 
+super + l
+  systemctl hibernate
+
 
 ################################# state/flags ##################################
 # set the window state
