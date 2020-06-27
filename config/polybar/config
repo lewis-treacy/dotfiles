@@ -158,7 +158,7 @@ temp-zone = 2
 
 
 ; top monitor bar
-[bar/top]
+[bar/left]
 inherit = bar/main
 monitor = ${env:MONITOR:HDMI-0}
 modules-left = bspwm

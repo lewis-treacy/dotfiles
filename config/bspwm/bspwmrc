@@ -9,14 +9,14 @@ bspc config gapless_monocle      true
 bspc config click_to_focus       any
 
 # MONITORS
-xrandr --output DP-0 --auto --pos 0x1440 --primary
-xrandr --output HDMI-0 --auto --pos 440x0 --rotate inverted
-xrandr --output DVI-I-1 --auto --pos 3440x1200 --rotate right
+xrandr --output HDMI-0 --auto --pos 0x0 --rotate left
+xrandr --output DP-0 --auto --pos 1440x480 --primary
+xrandr --output DVI-I-1 --auto --pos 4880x250 --rotate right
 
 # DESKTOPS
-bspc monitor DP-0 -d 1 2 3
-bspc monitor HDMI-0 -d 4 5 6
-bspc monitor DVI-I-1 -d 7 8 9 10
+bspc monitor DP-0 -d 1 2 3 4
+bspc monitor HDMI-0 -d 5 6 7
+bspc monitor DVI-I-1 -d 8 9 10
 
 feh --bg-center ~/.config/wallpaper
 
@@ -32,8 +32,8 @@ for rule in $(bspc rule -l); do
 done
 bspc rule -a GLava             state=floating
 bspc rule -a jetbrains-toolbox state=floating
-bspc rule -a Alacritty         state=floating rectangle=1024x576+1208+432
-bspc rule -a Nautilus          state=floating rectangle=1024x576+1208+432
+bspc rule -a Alacritty         state=floating rectangle=1024x576+2648+912
+bspc rule -a Nautilus          state=floating rectangle=1024x576+2648+912
 
 bash $HOME/.config/polybar/launch.sh
 
