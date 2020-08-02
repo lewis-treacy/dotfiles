@@ -107,14 +107,6 @@ super + {_,shift +} semicolon
 
 
 ################################ media controls ################################
-# mute
-XF86AudioMute
-  pactl set-sink-mute @DEFAULT_SINK@ toggle
-
-# volume up/down
-{XF86AudioRaiseVolume,XF86AudioLowerVolume}
-  pactl set-sink-volume @DEFAULT_SINK@ {+,-}5%
-
 # spotify play, stop, next and previous
 {XF86AudioPlay,XF86AudioStop,XF86AudioNext,XF86AudioPrev}
   dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.{PlayPause,Stop,Next,Previous}
