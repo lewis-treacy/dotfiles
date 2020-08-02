@@ -43,7 +43,7 @@ xsetroot -cursor_name left_ptr
 systemctl --user import-environment DISPLAY
 nm-applet
 
-xset s off
+xset s 600 600
 numlockx on
 
 wmname "LG3D"
