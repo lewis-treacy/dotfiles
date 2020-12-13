@@ -1,7 +1,5 @@
 #! /bin/sh
 
-sxhkd &
-
 bspc config border_width         2
 bspc config window_gap           5
 bspc config top_padding          0
@@ -41,7 +39,9 @@ setxkbmap -layout gb
 setxkbmap -option caps:escape
 xsetroot -cursor_name left_ptr
 systemctl --user import-environment DISPLAY
-nm-applet
+
+sxhkd &
+nm-applet &
 
 xset s 600 600
 numlockx on
