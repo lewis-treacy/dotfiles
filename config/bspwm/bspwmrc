@@ -42,6 +42,7 @@ systemctl --user import-environment DISPLAY
 
 sxhkd &
 nm-applet &
+sleep 0.2
 clipit &
 
 xset s 600 600
