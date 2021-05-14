@@ -31,7 +31,7 @@ super + {t,shift + t,s,f}
   bspc node -t {tiled,pseudo_tiled,floating,fullscreen}
 
 # set the node flags
-super + ctrl + {x,y,z}
+super + ctrl + {l,s,p}
   bspc node -g {locked,sticky,private}
 
 # hide current node, or restore a queried hidden node
