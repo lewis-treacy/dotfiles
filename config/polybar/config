@@ -88,9 +88,19 @@ type = custom/text
 content = 
 
 content-foreground = ${colors.alert}
+content-padding = 1
 
 click-left = shutdown now
 click-right = reboot
+
+
+[module/windows]
+type = custom/text
+content = 
+
+content-foreground = ${colors.secondary}
+
+click-left = systemctl reboot --boot-loader-entry=auto-windows
 
 
 [module/cpu]
@@ -151,7 +161,7 @@ margin-bottom = 0
 inherit = bar/main
 monitor = ${env:MONITOR:DP-2}
 modules-left = bspwm
-modules-right = net sep mem sep cpu sep temp sep power
+modules-right = net sep mem sep cpu sep windows power
 tray-position = none
 net-interface = enp5s0
 temp-zone = 2
