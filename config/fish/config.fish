@@ -11,7 +11,7 @@ set -gx DIFFPROG "nvim -d"
 
 set -gx VISUAL gvim
 set -gx LANG en_GB.UTF-8
-set -gx PATH /usr/local/bin $HOME/.go/bin $HOME/.bin $HOME/.pyenv/versions $PATH
+set -gx PATH /usr/local/bin $HOME/.go/bin $HOME/.bin $HOME/.local/bin $HOME/.pyenv/versions $PATH
 set -gx SHELL /usr/bin/fish
 set -gx GPG_TTY (tty)
 set -gx FZF_DEFAULT_COMMAND 'rg --files --no-ignore --hidden --follow -g "!{.git,node_modules}/*" 2> /dev/null'
