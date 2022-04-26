@@ -29,11 +29,12 @@ set fish_color_redirection teal
 set fish_color_status red
 set fish_color_user brgreen
 
-source ~/.config/fish/aliases.fish
-pyenv init - | source
+status is-login; and pyenv init --path | source
 
 if status is-login
     if test -z "$DISPLAY" -a "$XDG_VTNR" = 1
         exec startx -- -keeptty
     end
 end
+
+source ~/.config/fish/aliases.fish
